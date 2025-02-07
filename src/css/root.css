@@ -1,0 +1,12 @@
+/* 
+    quy định màu sắc
+    quy định font chữ
+    quy định kích thước chữ
+    quy định padding, margin
+    
+ */
+ :root {
+    --black-color: #333;
+    --primary-black: #000;
+    --red-color: #ff0000;
+ }

@@ -1,0 +1,16 @@
+/* 
+font chữ chính
+các icons link
+ */
+ @import url(./root.css);
+ /* boostrap icons */
+ @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+ /* các font chữ */
+ @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+ }
