@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './Header'; // Import Header component
-import Footer from './Footer'; // Import Header component
-import Button from './Button'; // Import Header component
+import Header from './components/Header'; // Import Header component
+import Footer from './components/Footer'; // Import Header component
+import Button from './components/Button'; // Import Header component
 
 const App = () => {
   return (

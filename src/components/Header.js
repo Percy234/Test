@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import '../css/header.css';
-import LogInForm from "./form";
+import LogInForm from "./Form";
 
 export default function Header() {
     const [showLogInForm, setShowLogInForm] = useState(false);
