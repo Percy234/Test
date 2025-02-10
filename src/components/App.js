@@ -11,8 +11,6 @@ const App = () => {
         <h2>Welcome to My App</h2>
         <p>This is the main content of the app.</p>
         <Button label="youtube" url="https://youtube.com"/>
-        <Button label="Facebook" url="https://facebook.com"/>
-        <Button label="tiktok" url="https://tiktok.com"/>
       </main>
       <Footer />
     </div>
