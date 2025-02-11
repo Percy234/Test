@@ -10,9 +10,9 @@ export default function Header() {
     return (
         <div>
             <header>
-                <button className="menu-toggle" onClick={()=> setShowMenu(!showMenu)}>Menu</button>
                 {showMenu && <Menubar closeMenu={()=> setShowMenu(false)}/>}
                 <h1 className="logo">Zara Therapy Clinic</h1>
+                <button className="menu-toggle" onClick={()=> setShowMenu(!showMenu)}>Menu</button>
                 <ul className="listnav">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
