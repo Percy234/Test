@@ -2,12 +2,16 @@ import React from "react";
 import { useState } from "react";
 import '../css/header.css';
 import LogInForm from "./Form";
+import Menubar from "./menu";
 
 export default function Header() {
     const [showLogInForm, setShowLogInForm] = useState(false);
+    const [showMenu, setShowMenu] = useState(false);
     return (
         <div>
             <header>
+                <button className="menu-toggle" onClick={()=> setShowMenu(!showMenu)}>Menu</button>
+                {showMenu && <Menubar closeMenu={()=> setShowMenu(false)}/>}
                 <h1 className="logo">Zara Therapy Clinic</h1>
                 <ul className="listnav">
                     <li><a href="#">Home</a></li>
