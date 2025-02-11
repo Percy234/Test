@@ -42,41 +42,6 @@ nav {
 .listnav li a:hover {
   color: #FF6699;
 }
-
-.listnav li ul {
-  position: absolute;
-  list-style: none;
-  padding: 10px;
-  background-color: aliceblue;
-  top: 100%;
-  left: 0;
-  display: none;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  transition: opacity 0.3s, transform 0.3s;
-  transform: translateY(10px);
-}
-
-.productbars li a,
-.servicebars li a {
-  border-bottom: 1px solid black;
-  color: black;
-  padding: 5px 0;
-  transition: color 0.3s;
-}
-
-.productbars li a:hover,
-.servicebars li a:hover {
-  color: #FF6699;
-}
-
-.listnav li:hover ul {
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
-}
-
 .btnLogIn {
   padding: 5px 15px;
   font-size: 2.5vh;
@@ -161,13 +126,5 @@ nav {
   background-color: green;
   color: white;
   transition: 0.3s;
-}
-.productbars {
-  display: none;
-}
-.menu a:hover nav {
-  display: block;
-  background-color: green;
-  color: white;
 }
 }
