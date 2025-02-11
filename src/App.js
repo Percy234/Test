@@ -1,20 +1,26 @@
 import React from 'react';
-import Header from './components/Header'; // Import Header component
-import Footer from './components/Footer'; // Import Header component
-import Button from './components/Button'; // Import Header component
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Button from './components/Button';
+import Products from './components/Products';
 
-const App = () => {
+function App() {
   return (
-    <div>
+    <Router>
       <Header />
+      <Routes>
+        <Route path="/products" element={<Products />} />
+        {/* Add other routes here */}
+      </Routes>
       <main>
         <h2>Welcome to My App</h2>
         <p>This is the main content of the app.</p>
         <Button label="youtube" url="https://youtube.com"/>
       </main>
       <Footer />
-    </div>
+    </Router>
   );
-};
+}
 
 export default App;

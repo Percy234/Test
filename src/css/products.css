@@ -1,0 +1,57 @@
+@import url('main.css');
+
+.products {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.category {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.category h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    text-transform: uppercase;
+    border-bottom: 2px solid #6666FF;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.category ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.category li {
+    margin-bottom: 10px;
+    flex: 1 1 calc(25% - 20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.category h3 {
+    font-size: 20px;
+    margin: 0;
+    color: #6666FF;
+}
+
+.category p {
+    margin: 5px 0 0;
+    color: #666;
+}
