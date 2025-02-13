@@ -9,6 +9,10 @@ export default function LogInForm({closeForm}) {
     const handleSubmit = ()=> {
         const caseCheck = new RegExp("[A-Z]");
 
+        if (!password && !repassword && !username) {
+            alert("Please login!")
+            return;
+        }
         if (!caseCheck.test(username)) {
             alert("Username must contain at least one uppercase letter");
             return;

@@ -1,3 +1,4 @@
+@import url('main.css');
 header {
   flex-wrap: wrap;
   display: flex;
@@ -89,6 +90,7 @@ nav {
 @media screen and (max-width: 924px) {
   .menu-toggle {
     display: block;
+    right: 1;
   }
   .listnav {
     display: none;
