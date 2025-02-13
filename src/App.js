@@ -13,11 +13,6 @@ function App() {
         <Route path="/products" element={<Products />} />
         {/* Add other routes here */}
       </Routes>
-      <main>
-        <h2>Welcome to My App</h2>
-        <p>This is the main content of the app.</p>
-        <Button label="youtube" url="https://youtube.com"/>
-      </main>
       <Footer />
     </Router>
   );
