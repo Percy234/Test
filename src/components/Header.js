@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 import '../css/header.css';
 import LogInForm from "./form";
 import Menubar from "./menu";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+
 
 export default function Header() {
     const [showLogInForm, setShowLogInForm] = useState(false);
@@ -14,8 +13,7 @@ export default function Header() {
         <div>
             <header>
                 {showMenu && <Menubar closeMenu={() => setShowMenu(false)} />}
-                <button className="menu-toggle" onClick={() => setShowMenu(!showMenu)}>
-                <FontAwesomeIcon icon={faBars}/></button> { /* thanh menu */}
+                <button className="menu-toggle" onClick={() => setShowMenu(!showMenu)}>Menu</button> { /* thanh menu */}
                 <h1 className="logo">Zara Therapy Clinic</h1>
                 <ul className="listnav">
                     <li><Link to="/" onClick={() => setShowMenu(false)}>Home</Link></li>
