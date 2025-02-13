@@ -72,7 +72,7 @@ const Footer = () => {
             </div>
         </div>
       </div>
-      <p className='c1'>&copy; 2023 My App. All rights reserved.</p>
+      <p className='c1'>&copy; Copyright 2023 My App. All rights reserved.</p>
       <p className='c2'> {hours}:{minutes}:{seconds} - {day}/{month}/{year} </p>
     </footer>
   );
