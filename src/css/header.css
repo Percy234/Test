@@ -12,7 +12,7 @@ header {
 .logo {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
-  color: #F0F8FF; /* AliceBlue */
+  color: red; /* AliceBlue */
   font-size: 200%;
 }
 
