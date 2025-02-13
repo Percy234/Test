@@ -1,0 +1,19 @@
+.about{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.about-row{
+    display: flex;
+}
+.about__colum-2-4{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 25%;
+}
+.about-2-5{
+    background-image: linear-gradient(to right, #87CEEB, #ADD8E6);
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+}
