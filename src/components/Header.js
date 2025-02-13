@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import '../css/header.css';
 import LogInForm from "./form";
 import Menubar from "./menu";
+import '../css/main.css';
 
 
 export default function Header() {
@@ -13,7 +14,7 @@ export default function Header() {
         <div>
             <header>
                 {showMenu && <Menubar closeMenu={() => setShowMenu(false)} />}
-                <button className="menu-toggle" onClick={() => setShowMenu(!showMenu)}>Menu</button> { /* thanh menu */}
+                <button className="menu-toggle" onClick={() => setShowMenu(!showMenu)}><i class="bi bi-list"></i></button> { /* thanh menu */}
                 <h1 className="logo">Zara Therapy Clinic</h1>
                 <ul className="listnav">
                     <li><Link to="/" onClick={() => setShowMenu(false)}>Home</Link></li>

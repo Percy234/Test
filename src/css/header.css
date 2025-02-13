@@ -128,9 +128,10 @@ nav {
   border-radius: 8%;
   padding: 10px;
   transition: all 0.3s;
+  cursor: pointer;
 }
 .menu-toggle:hover {
-  background-color: green;
+  background-color: #97FFFF;
   color: white;
   transition: 0.3s;
 }
