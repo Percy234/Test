@@ -14,7 +14,7 @@ const productsData = {
         { id: 3, name: "Lotion 3", description: "Description for Lotion 3" },
         { id: 4, name: "Lotion 4", description: "Description for Lotion 4" },
     ],
-    HelpingMachine: [
+    Machine: [
         { id: 1, name: "Helping Machine 1", description: "Description for Helping Machine 1" },
         { id: 2, name: "Helping Machine 2", description: "Description for Helping Machine 2" },
         { id: 3, name: "Helping Machine 3", description: "Description for Helping Machine 3" },

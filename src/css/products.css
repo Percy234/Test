@@ -1,4 +1,4 @@
-@import url('main.css');
+@import url('root.css');
 
 .products {
     padding: 20px;
@@ -8,16 +8,16 @@
 
 .category {
     margin-bottom: 40px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--color-category-border);
     padding-bottom: 20px;
 }
 
 .category h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #333;
+    color: var(--color-product-title);
     text-transform: uppercase;
-    border-bottom: 2px solid #6666FF;
+    border-bottom: 2px solid var(--color-category-title);
     display: inline-block;
     padding-bottom: 5px;
 }
@@ -33,25 +33,25 @@
 .category li {
     margin-bottom: 10px;
     flex: 1 1 calc(25% - 20px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px var(--color-category-box-shadow);
     padding: 10px;
     border-radius: 5px;
-    background-color: #f9f9f9;
+    background-color: var(--color-category-background);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .category li:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px var(--color-category-hover-shadow);
 }
 
 .category h3 {
     font-size: 20px;
     margin: 0;
-    color: #6666FF;
+    color: var(--color-category-title);
 }
 
 .category p {
     margin: 5px 0 0;
-    color: #666;
+    color: var(--color-category-text);
 }
