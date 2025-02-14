@@ -1,5 +1,5 @@
 import React, {use, useState} from "react";
-
+import "../css/header.css";
 
 export default function LogInForm({closeForm}) {
     const [username, setUsername] = useState("");
@@ -38,8 +38,8 @@ export default function LogInForm({closeForm}) {
                     <input type="text" placeholder="Enter the Username" value={username} onChange={(event)=>setUsername(event.target.value)}></input><br></br>
                     <input type="password" placeholder="Enter the Password" value={password} onChange={(event)=>setPassword(event.target.value)}></input><br></br>
                     <input type="password" placeholder="Re-password" value={repassword} onChange={(event)=>setRepassword(event.target.value)}></input><br></br><br></br>
-                    <button type="submit" onClick={handleSubmit}>Submit</button>
-                    <button type="button" onClick={closeForm}>Cancel</button>
+                    <button type="submit" className="submit-toggle" onClick={handleSubmit}>Submit</button>
+                    <button type="button"  className="cancel-toggle" onClick={closeForm}>Cancel</button>
                 </form>
             </div>
         </div>

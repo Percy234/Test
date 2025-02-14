@@ -44,6 +44,7 @@ nav {
 .listnav li a:hover {
   color: #87CEFA; /* LightSkyBlue */
 }
+/*Style LogIn*/
 
 .btnLogIn {
   padding: 5px 15px;
@@ -72,8 +73,32 @@ nav {
   padding: 50px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.396);
   border-radius: 5px;
+  width: 300px;
 }
-
+.LogInForm h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.LogInForm input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.LogInForm button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  background-color: #4682B4; /* SteelBlue */
+  color: white;
+  cursor: pointer;
+}
+.LogInForm button:hover {
+  background-color: #87CEFA; /* LightSkyBlue */
+}
 .overlay {
   display: block;
   position: fixed;
