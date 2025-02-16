@@ -8,9 +8,9 @@
     margin-top: 50px;
 }
  .home-img {
-   height: 100vh;
+   height: 80vh;
    width: 100%;
-   background-image: url('/public/img/Container/img-1.png');
+   background-image: url('/public/img/Container/img-2.jpg');
    background-size: cover;
    overflow: hidden;
  }
@@ -26,7 +26,7 @@
 .product-list {
    margin: 20px;
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* điều chỉnh kích thước các cột */
+   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* điều chỉnh kích thước các cột */
    gap: 20px;
 }
 .product {
@@ -45,6 +45,23 @@
    max-width: 90%;
    border-radius: 10px;
 }
+                   /* Style sections */
+.Contents {
+   margin: 0 20px;
+}
+.Contents h1 {
+   font-weight: bolder;
+   font-family: sans-serif;
+   justify-content: center;
+   text-align: center;
+}
+.Contents p {
+   font-size: 1.2em;
+}
+.Contents h3 {
+   color: #4682B4;
+}
+
 @media screen and (max-width: 924px) {
    .home-img {
          height: 50vh;

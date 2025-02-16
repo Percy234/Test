@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './css/main.css';
 import Header from './pages/Header';
 import Footer from './pages/Footer';
 import Button from './components/Button';
@@ -9,6 +10,9 @@ import Home from './pages/Home';
 import ProductDetail from './pages/ProductDetail';
 
 function App() {
+  const scollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   return (
     <Router>
       <Header />
@@ -20,6 +24,7 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
         {/* Add the new Route here */ }
        </Routes>
+       <button className="btnTop" onClick={scollToTop}><i class="bi bi-house-door-fill"></i></button>
       <Footer />
     </Router>
   );

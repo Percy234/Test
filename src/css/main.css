@@ -14,3 +14,16 @@ các icons link
     box-sizing: border-box;
     font-family: 'Cabin', sans-serif;
  }
+ .btnTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--color-skyblue);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+ }
