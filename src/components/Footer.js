@@ -1,17 +1,32 @@
 import React from 'react';
+import { useState } from 'react';
 import '../css/footer.css';
 
 
 // import './Footer.css'; // Import CSS file for styling
 
 const Footer = () => {
-  const currentDate = new Date();
-  const year = currentDate.getFullYear();
-  const month = currentDate.getMonth() + 1; // Tháng bắt đầu từ 0
-  const day = currentDate.getDate();
-  const hours = currentDate.getHours();
-  const minutes = currentDate.getMinutes();
-  const seconds = currentDate.getSeconds();
+  let currentDate = new Date();
+  let year = currentDate.getFullYear();
+  let month = currentDate.getMonth() + 1; // Tháng bắt đầu từ 0
+  let day = currentDate.getDate();
+  let hours = currentDate.getHours();
+  let minutes = currentDate.getMinutes();
+  let seconds = currentDate.getSeconds();
+
+  const [time, setTime] = useState(`${hours}:${minutes}:${seconds} - ${day}/${month}/${year}`);
+
+  setInterval(() => {
+    currentDate = new Date();
+    year = currentDate.getFullYear();
+    month = currentDate.getMonth() + 1; // Tháng bắt đầu từ 0
+    day = currentDate.getDate();
+    hours = currentDate.getHours();
+    minutes = currentDate.getMinutes();
+    seconds = currentDate.getSeconds();
+
+    setTime(`${hours}:${minutes}:${seconds} - ${day}/${month}/${year}`);
+  }, 1000)
   return (
     <footer className="footer">
       <div className='grid'>
@@ -73,7 +88,7 @@ const Footer = () => {
         </div>
       </div>
       <p className='c1'>&copy; Copyright 2023 My App. All rights reserved.</p>
-      <p className='c2'> {hours}:{minutes}:{seconds} - {day}/{month}/{year} </p>
+      <p className='c2'>{time}</p>
     </footer>
   );
 };

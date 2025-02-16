@@ -3,7 +3,7 @@ import '../css/products.css';
 
 const productsData = {
     Essential: [
-        { id: 1, name: "Essential Oil 1", description: "Description for Essential Oil 1" },
+        { id: 1, img:"/img/essential oil/2.jpg", name: "Essential-oil-1", description: "Description for Essential Oil 1" },
         { id: 2, name: "Essential Oil 2", description: "Description for Essential Oil 2" },
         { id: 3, name: "Essential Oil 3", description: "Description for Essential Oil 3" },
         { id: 4, name: "Essential Oil 4", description: "Description for Essential Oil 4" },
@@ -31,6 +31,7 @@ export default function Products() {
                     <ul>
                         {productsData[category].map(product => (
                             <li key={product.id}>
+                                <img src={product.img}></img>
                                 <h3>{product.name}</h3>
                                 <p>{product.description}</p>
                             </li>
