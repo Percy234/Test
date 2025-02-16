@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+ }
+.home-content {
+    margin-top: 50px;
+}
+ .home-img {
+   height: 100vh;
+   width: 100%;
+   background-image: url('/public/img/Container/img-1.png');
+   background-size: cover;
+   overflow: hidden;
+ }
+.home-introduce {
+   top: 50%;
+   left: 10%; 
+   transform: translateY(-50%);
+   color: rgb(0, 0, 0); 
+   max-width: 90%;
+   position: absolute;
+   font-size: clamp(1.5em, 4vw, 2.5em); /* điều chỉnh kích thước theo màn hình clamp(min, preferred, max) */
+}
+.product-list {
+   margin: 20px;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* điều chỉnh kích thước các cột */
+   gap: 20px;
+}
+.product {
+   text-align: center;
+   border-radius: 15px;
+   padding: 20px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   background-color: var(--color-category-background);
+}
+.product:hover {
+   transform: translateY(-7px);
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-list img {
+   max-width: 90%;
+   border-radius: 10px;
+}
+@media screen and (max-width: 924px) {
+   .home-img {
+         height: 50vh;
+   }
+}

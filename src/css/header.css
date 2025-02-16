@@ -65,8 +65,8 @@ nav {
 }
 
 .LogInForm {
+  position: relative;
   display: block;
-  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -75,6 +75,8 @@ nav {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.396);
   border-radius: 5px;
   width: 300px;
+  z-index: 10;
+  overflow: hidden;
 }
 
 .LogInForm h2 {
