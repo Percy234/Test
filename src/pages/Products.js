@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import '../css/products.css';
 import Slide from "../components/Slide";
 
@@ -33,9 +34,11 @@ export default function Products() {
                     <ul>
                         {productsData[category].map(product => (
                             <li key={product.id}>
-                                <img src={product.img}></img>
-                                <h3>{product.name}</h3>
-                                <p>{product.description}</p>
+                                <Link to={`/products/${product.id}`}>
+                                    <img src={product.img} alt={product.name} />
+                                    <h3>{product.name}</h3>
+                                    <p>{product.description}</p>
+                                </Link>
                             </li>
                         ))}
                     </ul>

@@ -52,6 +52,14 @@
     box-shadow: 0 0 15px var(--color-category-hover-shadow);
 }
 
+.category li a {
+    text-decoration: none;
+    color: inherit;
+}
+.category li a:hover {
+    text-decoration: none;
+}
+
 .category h3 {
     font-size: 20px;
     margin: 0;
