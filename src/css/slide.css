@@ -1,0 +1,16 @@
+#slide-container {
+    height: 400px;
+}
+#slide-container #carouselExample {
+    height: 100%;
+    width: 100%;
+}
+#slide-container #carouselExample .carousel-inner {
+    height: 100%;
+    width: 100%;
+}
+.carousel-inner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,46 @@
+import React from "react";
+import '../css/products.css';
+import Slide from "../components/Slide";
+
+const productsData = {
+    "Essential Oil": [
+        { id: 1, img:"/img/essential oil/1.png", name: "Essential Oil 1", description: "Description for Essential Oil 1" },
+        { id: 2, img:"/img/essential oil/2.png", name: "Essential Oil 2", description: "Description for Essential Oil 2" },
+        { id: 3, img:"/img/essential oil/3.png", name: "Essential Oil 3", description: "Description for Essential Oil 3" },
+        { id: 4, img:"/img/essential oil/4.png", name: "Essential Oil 4", description: "Description for Essential Oil 4" },
+    ],
+    Lotion: [
+        { id: 1, img:"/img/lotions/1.png", name: "Lotion 1", description: "Description for Lotion 1" },
+        { id: 2, img:"/img/lotions/2.png", name: "Lotion 2", description: "Description for Lotion 2" },
+        { id: 3, img:"/img/lotions/3.png", name: "Lotion 3", description: "Description for Lotion 3" },
+        { id: 4, img:"/img/lotions/4.png", name: "Lotion 4", description: "Description for Lotion 4" },
+    ],
+    "Helping Machine": [
+        { id: 1, img:"/img/helping machines/1.png", name: "Helping Machine 1", description: "Description for Helping Machine 1" },
+        { id: 2, img:"/img/helping machines/2.png", name: "Helping Machine 2", description: "Description for Helping Machine 2" },
+        { id: 3, img:"/img/helping machines/3.png", name: "Helping Machine 3", description: "Description for Helping Machine 3" },
+        { id: 4, img:"/img/helping machines/4.png", name: "Helping Machine 4", description: "Description for Helping Machine 4" },
+    ],
+};
+
+export default function Products() {
+    return (
+        <div className="products">
+            <Slide />
+            {Object.keys(productsData).map(category => (
+                <div key={category} className="category">
+                    <h2>{category}</h2>
+                    <ul>
+                        {productsData[category].map(product => (
+                            <li key={product.id}>
+                                <img src={product.img}></img>
+                                <h3>{product.name}</h3>
+                                <p>{product.description}</p>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            ))}
+        </div>
+    );
+}

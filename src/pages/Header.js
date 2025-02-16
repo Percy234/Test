@@ -2,8 +2,8 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import '../css/header.css';
-import LogInForm from "./form";
-import Menubar from "./menu";
+import LogInForm from "../components/form";
+import Menubar from "../components/menu";
 import '../css/main.css';
 
 
