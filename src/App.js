@@ -8,6 +8,7 @@ import AboutUs from './pages/About_Us';
 import Products from './pages/Products';
 import Home from './pages/Home';
 import ProductDetail from './pages/ProductDetail';
+import Services from './pages/Services'; // Import component Services
 
 function App() {
   const scollToTop = () => {
@@ -22,9 +23,10 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/products/:productId" element={<ProductDetail />} />
         <Route path="/about" element={<AboutUs />} />
-        {/* Add the new Route here */ }
-       </Routes>
-       <button className="btnTop" onClick={scollToTop}><i class="bi bi-house-door-fill"></i></button>
+        <Route path="/services" element={<Services />} /> {/* Thêm route cho trang Services */}
+        {/* Add the new Route here */}
+      </Routes>
+      <button className="btnTop" onClick={scollToTop}><i className="bi bi-house-door-fill"></i></button>
       <Footer />
     </Router>
   );
