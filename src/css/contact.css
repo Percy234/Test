@@ -1,0 +1,74 @@
+.container-contact {
+    margin: 0;
+    background-image: url('/public/img/Container/img-bgd.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 80vh;
+}
+.container-contact h1 {
+    text-align: center;
+    padding: 50px;
+    color: white;
+    width: 100%;
+}
+.feedback {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background-color: azure;
+    align-items: center;
+    margin-left: 5%;
+}
+.feedback form {
+    width: 100%;
+    padding: 20px;
+}
+.feedback form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+.feedback form input, .feedback form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.submit-toggle {
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-image: linear-gradient(to right, #0099FF, #CCFFFF);
+    color: white;
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+    transition: all 0.4s ease;
+}
+.submit-toggle:hover {
+    background-image: linear-gradient(to right, #00CCFFFF, #0099FF);
+    padding: 12px 25px;
+   
+}
+@media  screen and (max-width: 924px) {
+    .container-contact {
+        height: 100vh;
+    }
+    .container-contact h1 {
+        padding: 20px;
+    }
+    .feedback {
+        flex-direction: column;
+        padding: 10px;
+        width: 90%;
+    }
+    .feedback form {
+        width: 100%;
+    }
+    
+}

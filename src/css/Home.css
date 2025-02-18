@@ -26,7 +26,7 @@
 .product-list {
    margin: 20px;
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* điều chỉnh kích thước các cột */
+   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* điều chỉnh kích thước các cột */
    gap: 20px;
 }
 .product {
@@ -42,10 +42,14 @@
    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .product-list img {
-   max-width: 90%;
+   max-width: 100%;
    border-radius: 10px;
 }
                    /* Style sections */
+
+section {
+   margin: 20px;
+}
 .Contents {
    margin: 0 20px;
 }

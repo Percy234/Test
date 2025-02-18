@@ -9,7 +9,7 @@ export default function LogInForm({closeForm}) {
     const handleSubmit = ()=> {
         const caseCheck = new RegExp("[A-Z]");
 
-        if (!password && !repassword && !username) {
+        if (!password && !username) {
             alert("Please login!")
             return;
         }
@@ -19,10 +19,6 @@ export default function LogInForm({closeForm}) {
         }
         if (password.length < 6 || password.length > 12) {
             alert("Password must be between 6 and 12 characters");
-            return;
-        }
-        if (password !== repassword) {
-            alert ("Please the enter correct password!");
             return;
         }
         else {
@@ -37,9 +33,9 @@ export default function LogInForm({closeForm}) {
                 <form>
                     <input type="text" placeholder="Enter the Username" value={username} onChange={(event)=>setUsername(event.target.value)}></input><br></br>
                     <input type="password" placeholder="Enter the Password" value={password} onChange={(event)=>setPassword(event.target.value)}></input><br></br>
-                    <input type="password" placeholder="Re-password" value={repassword} onChange={(event)=>setRepassword(event.target.value)}></input><br></br><br></br>
                     <button type="submit" className="submit-toggle" onClick={handleSubmit}>Submit</button>
                     <button type="button"  className="cancel-toggle" onClick={closeForm}>Cancel</button>
+                    <p>You do not have account?<a href="#">Register</a></p>
                 </form>
             </div>
         </div>

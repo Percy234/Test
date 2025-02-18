@@ -23,6 +23,23 @@ export default function Home() {
         },
         
     ];
+    const services = [
+        {
+            id: 1,
+            name: "Physiotherapy & Rehabilitation",
+            description: "Treatment for joint pain, spinal degeneration, herniated discs, sciatica, and more.",
+        },
+        {
+            id: 2,
+            name: "Spinal Care",
+            description: "Stretching and spinal adjustment therapies to alleviate pain and enhance flexibility.",
+        },
+        {
+            id: 3,
+            name: "Post-Injury & Post-Surgery Therapy",
+            description: "Recovery support after accidents, joint replacement surgeries, and sports injuries",
+        }
+    ];
     return (
         <div className="home">
             <div className="home-img"></div>
@@ -56,6 +73,18 @@ export default function Home() {
                             </div>
                             ))}
                     </div>
+                </section>
+                <section className="Services">
+                    <h2>Services</h2>
+                    <p>Our clinic offers a wide range of services to help you recover from injuries, manage chronic conditions, and improve your overall health and well-being.</p>
+                      <div className="service-list">
+                        {services.map((service)=>(
+                            <div key={service.id} className="service">
+                                <h3>{service.name}</h3>
+                                <p>{service.description}</p>
+                            </div>
+                            ))}
+                      </div>
                 </section>
             </div>
         </div>

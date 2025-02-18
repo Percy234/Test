@@ -9,6 +9,7 @@ import Products from './pages/Products';
 import Home from './pages/Home';
 import ProductDetail from './pages/ProductDetail';
 import Services from './pages/Services'; // Import component Services
+import Contact from './pages/Contact_Us'; // Import component Contact
 
 function App() {
   const scollToTop = () => {
@@ -24,7 +25,7 @@ function App() {
         <Route path="/products/:productId" element={<ProductDetail />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/services" element={<Services />} /> {/* Thêm route cho trang Services */}
-        {/* Add the new Route here */}
+        <Route path="/contact" element={<Contact />} /> {/* Thêm route cho trang Contact */}
       </Routes>
       <button className="btnTop" onClick={scollToTop}><i className="bi bi-house-door-fill"></i></button>
       <Footer />
