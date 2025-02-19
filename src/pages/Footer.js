@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import '../css/footer.css';
+import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
 
 // import './Footer.css'; // Import CSS file for styling
