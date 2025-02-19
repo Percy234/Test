@@ -67,18 +67,21 @@ const Footer = () => {
               <ul className="footer-list">
                         <li className="footer-list-item">
                             <a href="" className="footer-list-item-link">
-                                <i className="fa-brands fa-facebook"></i>
-                                Facebook</a>
+                                <i class="bi bi-facebook "></i>
+                                 Facebook
+                            </a>
                         </li>
                         <li className="footer-list-item">
                             <a href="" className="footer-list-item-link">
-                                <i className="fa-brands fa-instagram"></i>
-                                Instagram</a>
+                                <i class="bi bi-instagram "></i>
+                                 Instagram
+                            </a>
                         </li>
                         <li className="footer-list-item">
                             <a href="" className="footer-list-item-link">
-                                <i className="fa-brands fa-linkedin"></i>
-                                Linkedin</a>
+                                <i class="bi bi-linkedin "></i>
+                                 Linkedin
+                            </a>
                         </li>
                     </ul>
             </div>
