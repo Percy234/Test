@@ -21,6 +21,12 @@ export default function Home() {
             description: "Description for Helping Machine 2",
             image: "/img/helping machines/2.png",
         },
+        {
+            id: 4,
+            name: "Lotion",
+            description: "Description for Lotion 3",
+            image: "/img/lotions/3.png",
+        }
         
     ];
     const services = [
@@ -38,6 +44,11 @@ export default function Home() {
             id: 3,
             name: "Post-Injury & Post-Surgery Therapy",
             description: "Recovery support after accidents, joint replacement surgeries, and sports injuries",
+        },
+        {
+            id: 4,
+            name: "",
+            description: "",
         }
     ];
     return (

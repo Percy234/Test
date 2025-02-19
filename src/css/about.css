@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+ }
 .about{
     width: 1200px;
     max-width: 100%;
@@ -20,4 +26,7 @@
     color:#87CEEB;
     text-align: center;
     margin-top: 30px;
+}
+a {
+    font-size: 1.2em;
 }
