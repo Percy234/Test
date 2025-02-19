@@ -6,20 +6,20 @@ export default function Home() {
         {
             id: 1,
             name: "Essential Oil",
-            description: "Description for Essential Oil 1",
-            image: "/img/essential oil/1.png",
+            description: "Description for Essential Oil 2",
+            image: "/img/essential oil/2.png",
         },
         {
             id: 2,
             name: "Lotion",
             description: "Description for Lotion 1",
-            image: "/img/essential oil/2.png",
+            image: "/img/lotions/1.png",
         },
         {
             id: 3,
             name: "Helping Machine",
-            description: "Description for Helping Machine 1",
-            image: "/img/essential oil/3.png",
+            description: "Description for Helping Machine 2",
+            image: "/img/helping machines/2.png",
         },
         
     ];
