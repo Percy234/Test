@@ -3,18 +3,18 @@ import { useParams } from 'react-router-dom';
 import '../css/productDetail.css';
 
 const productData = {
-    1: { name: 'Essential Oil 1', description: 'Description for Essential Oil 1', img: '/img/essential oil/1.png' },
-    2: { name: 'Essential Oil 2', description: 'Description for Essential Oil 2', img: '/img/essential oil/2.png' },
-    3: { name: 'Essential Oil 3', description: 'Description for Essential Oil 3', img: '/img/essential oil/3.png' },
-    4: { name: 'Essential Oil 4', description: 'Description for Essential Oil 4', img: '/img/essential oil/4.png' },
-    5: { name: 'Lotion 1', description: 'Description for Lotion 1', img: '/img/lotions/1.png' },
-    6: { name: 'Lotion 2', description: 'Description for Lotion 2', img: '/img/lotions/2.png' },
-    7: { name: 'Lotion 3', description: 'Description for Lotion 3', img: '/img/lotions/3.png' },
-    8: { name: 'Lotion 4', description: 'Description for Lotion 4', img: '/img/lotions/4.png' },
-    9: { name: 'Helping Machine 1', description: 'Description for Helping Machine 1', img: '/img/helping machines/1.png' },
-    10: { name: 'Helping Machine 2', description: 'Description for Helping Machine 2', img: '/img/helping machines/2.png' },
-    11: { name: 'Helping Machine 3', description: 'Description for Helping Machine 3', img: '/img/helping machines/3.png' },
-    12: { name: 'Helping Machine 4', description: 'Description for Helping Machine 4', img: '/img/helping machines/4.png' },
+    1: { name: 'Lavender', description: 'A beautiful versatile aroma of lavender and rosemary essential oils induces calm and promotes restful sleep. A perfect antidote to hectic days will help to create a soothing ambience in your home.', img: '/img/essential oil/1.png' },
+    2: { name: 'Pomelo', description: 'In addition to its common use in hair care, pomelo essential oil can also be used to fragrance a room and deodorize areas affected by smoking. Ecolife essential oil is completely derived from pomelo and is safe for your health, providing you with peace of mind when using it.', img: '/img/essential oil/2.png' },
+    3: { name: 'Puroleo', description: 'Fresh and Minty - Our pure peppermint oil perspires a cool refreshing aroma of freshly crushed peppermint leaves. With strong hints of minty sweet notes, our peppermint essential oil relaxes the mind, body and soul from within.', img: '/img/essential oil/3.png' },
+    4: { name: 'Longevity', description: 'Nanogize Ginseng Oil helps to overcome some conditions that cause pain such as arthritis and muscle pain. The oil helps blood circulation, dispelling persistent pain. From there, it brings a more comfortable mood because the oil has a gentle, hot and warm ginseng aroma.', img: '/img/essential oil/4.png' },
+    5: { name: 'Bee Natural', description: 'A rich and nourishing body lotion. Combines Shea Butter with oils of Sunflower and Humectants for 24 hour moisture. Wild honey helps soften and while Yoghurt helps hydrate skin. Deliciously fragranced.', img: '/img/lotions/1.png' },
+    6: { name: 'Exxtra Care & Repair', description: 'An advanced, intensive therapy body lotion that moisturises and relieves dry and itchy skin. Combines anti oxidising Avocado butter and Vitamin E with Pro Elastin known for its replenishing properties. Everything your skin has avo wanted.', img: '/img/lotions/2.png' },
+    7: { name: 'Vanilla Dream Serum Body Lotion', description: 'Vanilla Dream Serum Body Lotion SPF 30 PA+++ provides deep skin moisturization lasting up to 72 hours* while offering broad spectrum sun protection. This unique serum-in-lotion formula is lightweight, non-sticky, and features Niacinamide that brightens and evens skin tone, repairs the skin barrier, and removes spots and scars. ', img: '/img/lotions/3.png' },
+    8: { name: 'Strawberry Dream', description: 'Indulge your skin with the creamy goodness of a strawberry poundcake scented body lotion.  This lightweight, fast-absorbing formula provides lasting hydration, leaving your skin soft and smooth. Infused with the mouthwatering scent of fresh strawberries, whipped cream, and vanilla cake, it wraps you in a sweet, comforting aroma while keeping your skin moisturized all day.', img: '/img/lotions/4.png' },
+    9: { name: 'Handheld Massager', description: 'The deep tissue massage gun has 8 different massage heads, each of which is aimed at different muscles. After the massage gun hits the muscles, it can promote blood circulation, decompose lactic acid, and relieve muscle soreness after exercise. In addition, the massage gun also comes with a portable carring case, which is convenient to carry and relax the muscles anytime, anywhere.', img: '/img/helping machines/1.png' },
+    10: { name: 'Neck Massager', description: '8 Powerful Deep-Shiatsu Kneading Massage Nodes. Our neck massager help you better with alleviate muscle soreness, ease neck stiffness, eliminate cervical fatigue, and relax yourself after a long day work', img: '/img/helping machines/2.png' },
+    11: { name: 'Eye Massager', description: 'Comfortable Heating Massage - Renpho eye massager built-in heating pads provide a comfortable temperature between 104 and 107 degrees Fahrenheit(40℃-42℃), better for relaxing eye puffiness, dry eyes, etc. A hot compress can regulate the metabolism of the eyes, more effectively improve symptoms such as dry eyes, and reduce dark circles.', img: '/img/helping machines/3.png' },
+    12: { name: 'Electric Foot Massagers', description: 'Experience the soothing effects of air compression massage that targets your feet, calves, and thighs, relieving fatigue, soreness, and tension after long days at work or intense workouts. Treat yourself or surprise a loved one with this ideal companion for unwinding, relieving stress, and enjoying the benefits of a spa-like massage at home', img: '/img/helping machines/4.png' },
 };
 
 export default function ProductDetail() {

@@ -1,48 +1,39 @@
-.services-page {
+.services-container {
     padding: 20px;
-    background-color: var(--alice-blue);
-    max-width: 1200px;
-    margin: 0 auto;
+    font-family: Arial, sans-serif;
 }
 
-.services-page h2 {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: var(--steel-blue);
-}
-
-.services-list {
+.services-tabs {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
-}
-
-.service-item {
-    background-color: var(--white-color);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px var(--slate-gray);
-    width: 200px;
-    text-align: center;
-    border: 2px solid var(--light-slate-gray);
-}
-
-.service-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
     margin-bottom: 20px;
 }
 
-.service-item h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: var(--steel-blue);
+.services-tabs button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.service-item p {
-    font-size: 1em;
-    color: var(--slate-gray);
+.services-tabs button:hover {
+    background-color: #e0e0e0;
+}
+
+.services-tabs button.active {
+    background-color: #d0d0d0;
+    border-bottom: 2px solid #000;
+}
+
+.content-tabs {
+    text-align: center;
+}
+
+.tab-content {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fafafa;
 }
