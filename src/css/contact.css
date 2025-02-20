@@ -18,7 +18,6 @@
     width: 100%;
 }
 .feedback {
-    display: flex;
     justify-content: center;
     width: 50%;
     border-radius: 20px;
@@ -75,14 +74,16 @@
     gap: 20%;
 }
 .map {
-    width: 70%;
-    height: 100px;
+    width: 80%;
+    height: 135px;
     margin-right: 10%;
     padding: 20px;
 }
 @media  screen and (max-width: 924px) {
     .container-contact {
-        height: 100vh;
+        max-width: 100%;
+        height: 140vh;
+        display: inline-block;
     }
     .container-contact h1 {
         padding: 20px;
@@ -91,9 +92,20 @@
         flex-direction: column;
         padding: 10px;
         width: 90%;
+        margin-top: 10%;
     }
     .feedback form {
         width: 100%;
     }
-    
+.container-map {
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.map {
+    width: 90%;
+    height: 135px;
+    margin-right: 0;
+    padding: 10px;
+}
 }

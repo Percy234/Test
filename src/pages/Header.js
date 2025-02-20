@@ -14,7 +14,8 @@ export default function Header() {
             <header>
                 {showMenu && <Menubar closeMenu={() => setShowMenu(false)} />}
                 <button className="menu-toggle" onClick={() => setShowMenu(!showMenu)}><i class="bi bi-list"></i></button> { /* thanh menu */}
-                <h1 className="logo">Zara Therapy Clinic</h1>
+                <h1 className="logo">
+                    <img src="/img/Container/img-logo.jpg"></img>Zara Therapy Clinic</h1>
                 <ul className="listnav">
                     <li><Link to="/home" onClick={() => setShowMenu(false)}>Home</Link></li>
                     <li><Link to="/about" onClick={() => setShowMenu(false)}>About Us</Link></li>
