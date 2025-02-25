@@ -28,6 +28,7 @@ function App() {
         <Route path="/contact" element={<Contact />} /> {/* Thêm route cho trang Contact */}
       </Routes>
       <button className="btnTop" onClick={scollToTop}><i className="bi bi-house-door-fill"></i></button>
+      <button className="btnShop-Mobile"><i class="bi bi-cart-dash"></i></button>
       <Footer />
     </Router>
   );

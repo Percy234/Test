@@ -4,7 +4,6 @@ import "../css/header.css";
 export default function LogInForm({closeForm}) {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
-    const [repassword, setRepassword] = useState("");
     
     const handleSubmit = ()=> {
         const caseCheck = new RegExp("[A-Z]");

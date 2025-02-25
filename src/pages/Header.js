@@ -23,10 +23,13 @@ export default function Header() {
                     <li><Link to="/services" onClick={() => setShowMenu(false)}>Services</Link></li>
                     <li><Link to="/contact" onClick={() => setShowMenu(false)}>Contact Us</Link></li>
                 </ul>
+                <div className="btn-group">
                 <button type="button" className="btnLogIn" onClick={() => setShowLogInForm(true)}>Log In</button>
                 {
                     showLogInForm && <LogInForm closeForm={() => setShowLogInForm(false)} />
                 }
+                <div className="btnShop"><i class="bi bi-cart-dash"></i></div>
+                </div>
             </header>
         </div>
     )
