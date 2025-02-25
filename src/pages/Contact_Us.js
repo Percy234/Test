@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import "../css/contact.css";
 
 export default function Contact() {
@@ -21,12 +20,12 @@ export default function Contact() {
             </div>
             <div className="container-map">
             <div className="contact">
-                <p><i class="bi bi-geo-alt-fill">Address: 01 Lý Tự Trọng, Quận Ninh Kiều, TP. Cần Thơ</i></p>
-                <p><i class="bi bi-telephone-fill">Fax:  +84 292 373 1071</i></p>
-                <p><i class="bi bi-envelope-at-fill">Mail: cusc@ctu.edu.vn</i></p>
+                <p><i className="bi bi-geo-alt-fill">Address: 01 Lý Tự Trọng, Quận Ninh Kiều, TP. Cần Thơ</i></p>
+                <p><i className="bi bi-telephone-fill">Fax:  +84 292 373 1071</i></p>
+                <p><i className="bi bi-envelope-at-fill">Mail: cusc@ctu.edu.vn</i></p>
             </div>
             <div className="map">
-            <iframe src={mapLocation} width="100%" height="300%" frameBorder="0" style={{ border: 0 }} allowFullScreen></iframe>    
+            <iframe title="Contact" src={mapLocation} width="100%" height="300%" frameBorder="0" style={{ border: 0 }} allowFullScreen></iframe>    
            </div>
            </div>
         </div>

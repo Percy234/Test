@@ -51,10 +51,10 @@ const Footer = () => {
                         <li className="footer-list-item">
                             <a href="" className="footer-list-item-link">Giới thiệu</a>
                         </li>
-                        <li class="footer-list-item">
+                        <li className="footer-list-item">
                             <a href="" className="footer-list-item-link">Tuyển dụng</a>
                         </li>
-                        <li class="footer-list-item">
+                        <li className="footer-list-item">
                             <a href="" className="footer-list-item-link">Điều khoảng</a>
                         </li>
                     </ul>
@@ -67,19 +67,19 @@ const Footer = () => {
               <ul className="footer-list">
                         <li className="footer-list-item">
                             <a href="" className="footer-list-item-link">
-                                <i class="bi bi-facebook "></i>
+                                <i className="bi bi-facebook "></i>
                                  Facebook
                             </a>
                         </li>
                         <li className="footer-list-item">
                             <a href="" className="footer-list-item-link">
-                                <i class="bi bi-instagram "></i>
+                                <i className="bi bi-instagram "></i>
                                  Instagram
                             </a>
                         </li>
                         <li className="footer-list-item">
                             <a href="" className="footer-list-item-link">
-                                <i class="bi bi-linkedin "></i>
+                                <i className="bi bi-linkedin "></i>
                                  Linkedin
                             </a>
                         </li>
