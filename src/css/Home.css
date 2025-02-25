@@ -8,9 +8,9 @@
     margin-top: 50px;
 }
  .home-img {
-   height: 80vh;
+   height: 90vh;
    width: 100%;
-   background-image: url('/public/img/Container/img-2.jpg');
+   background-image: url('/public/img/Container/img-4.jpg');
    background-size: cover;
    overflow: hidden;
  }
@@ -68,6 +68,7 @@ section {
 
 @media screen and (max-width: 924px) {
    .home-img {
-         height: 50vh;
+         height: 30vh;
+         width: 100%;
    }
 }
