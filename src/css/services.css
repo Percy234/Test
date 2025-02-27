@@ -1,3 +1,4 @@
+@import url('main.css');
 .services-container {
     padding: 20px;
     font-family: Arial, sans-serif;
@@ -36,4 +37,35 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #fafafa;
+}
+
+.service-item {
+    margin-bottom: 20px;
+}
+
+.service-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.service-content {
+    display: flex;
+    align-items: center;
+}
+
+.service-img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin:0 20px;
+    border-radius: 10px;
+}
+
+.service-description {
+    flex: 1;
+    margin: 0;
+    color: var(--black-color);
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: justify;
 }

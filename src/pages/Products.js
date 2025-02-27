@@ -2,10 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import '../css/products.css';
 import Slide from "../components/Slide";
-
-//nạp dữ liệu product
 import productsData from "../data/product_data";
-
 
 export default function Products() {
     return (
@@ -21,7 +18,10 @@ export default function Products() {
                                     <img src={product.img} alt={product.name} />
                                     <h3>{product.name}</h3>
                                     <p>{product.description}</p>
-                                    <p>Price: {product.price}$</p>
+                                    <p>Price: 
+                                        <span className={product.sale ? "price sale" : "price"}>{product.price}$</span> 
+                                        {product.sale && <span id="sale">{product.sale}$</span>}
+                                    </p>
                                     <p>
                                         <div>
                                             {Array.from({ length: product.rating }, (_, index) => (

@@ -70,3 +70,10 @@
     margin: 5px 0 0;
     color: var(--color-category-text);
 }
+.price {
+    margin:0 6px;
+}
+.sale {
+    color: red;
+    text-decoration: line-through;
+}
