@@ -7,8 +7,10 @@ import AboutUs from './pages/About_Us';
 import Products from './pages/Products';
 import Home from './pages/Home';
 import ProductDetail from './pages/ProductDetail';
-import Services from './pages/Services'; // Import component Services
-import Contact from './pages/Contact_Us'; // Import component Contact
+import Services from './pages/Services';
+import Contact from './pages/Contact_Us';
+import Gallery from './pages/Gallery';
+import Therapists from './pages/Therapists'; // Import component Therapists
 
 function App() {
   const scollToTop = () => {
@@ -23,8 +25,10 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/products/:productId" element={<ProductDetail />} />
         <Route path="/about" element={<AboutUs />} />
-        <Route path="/services" element={<Services />} /> {/* Thêm route cho trang Services */}
-        <Route path="/contact" element={<Contact />} /> {/* Thêm route cho trang Contact */}
+        <Route path="/services" element={<Services />} /> 
+        <Route path="/contact" element={<Contact />} /> 
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/therapists" element={<Therapists />} /> {/* Thêm route cho trang Therapists */}
       </Routes>
       <button className="btnTop" onClick={scollToTop}><i className="bi bi-house-door-fill"></i></button>
       <button className="btnShop-Mobile"><i class="bi bi-cart-dash"></i></button>

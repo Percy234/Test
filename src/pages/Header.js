@@ -19,8 +19,10 @@ export default function Header() {
                 <ul className="listnav">
                     <li><Link to="/home" onClick={() => setShowMenu(false)}>Home</Link></li>
                     <li><Link to="/about" onClick={() => setShowMenu(false)}>About Us</Link></li>
+                    <li><Link to="/therapists" onClick={() => setShowMenu(false)}>Therapists</Link></li>
                     <li><Link to="/products" onClick={() => setShowMenu(false)}>Products</Link></li>
                     <li><Link to="/services" onClick={() => setShowMenu(false)}>Services</Link></li>
+                    <li><Link to="/gallery" onClick={() => setShowMenu(false)}>Gallery</Link></li>
                     <li><Link to="/contact" onClick={() => setShowMenu(false)}>Contact Us</Link></li>
                 </ul>
                 <div className="btn-group">
