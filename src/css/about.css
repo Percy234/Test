@@ -1,3 +1,4 @@
+@import url('main.css');
 * {
     margin: 0;
     padding: 0;
@@ -12,21 +13,23 @@
 .about-row{
     display: flex;
 }
-/* .about__colum-2-4{
+.about-row2{
     padding-left: 5px;
     padding-right: 5px;
-    width: 25%;
-} */
- .about-row2{
-    padding-left: 5px;
-    padding-right: 5px;
-    /* width: 50%; */
+    width: 50%;
  }
 .about-2-5{
-    color:#87CEEB;
+    color: var(--color-skyblue);
     text-align: center;
     margin-top: 30px;
 }
-a {
+.about__colum-2-4{
+    height: 342px;
+}
+p {
     font-size: 1.2em;
+}
+.about-description{
+    padding: 20px;
+    text-align: justify;
 }

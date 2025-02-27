@@ -5,7 +5,7 @@ import "../css/header.css";
 export default function Menubar({ closeMenu }) {
     return (
         <div>
-            <nav className="menu">
+            <nav className="menu listnav">
                 <Link to="/home" onClick={closeMenu}>Home</Link>
                 <Link to="/about" onClick={closeMenu}>About Us</Link>
                 <Link to="/therapists" onClick={closeMenu}>Therapists</Link> {/* Thêm liên kết đến trang Therapists */}

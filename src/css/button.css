@@ -1,0 +1,17 @@
+#button-component {
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.8;
+}
+#button-component:hover {
+    opacity: 1;
+}
+.primary {
+    background-color: #4CAF50;
+}
+.normal {
+    background-color: #008CBA;
+}

@@ -10,6 +10,7 @@ import ProductDetail from './pages/ProductDetail';
 import Services from './pages/Services';
 import Contact from './pages/Contact_Us';
 import Gallery from './pages/Gallery';
+import Cart from './pages/Cart';
 import Therapists from './pages/Therapists'; // Import component Therapists
 
 function App() {
@@ -28,11 +29,11 @@ function App() {
         <Route path="/services" element={<Services />} /> 
         <Route path="/contact" element={<Contact />} /> 
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/cart" element={<Cart />} />
         <Route path="/therapists" element={<Therapists />} /> {/* Thêm route cho trang Therapists */}
       </Routes>
-      <button className="btnTop" onClick={scollToTop}><i className="bi bi-house-door-fill"></i></button>
-      <button className="btnShop-Mobile"><i class="bi bi-cart-dash"></i></button>
       <Footer />
+      <button className="btnTop" onClick={scollToTop}><i className="bi bi-house-door-fill"></i></button>
     </Router>
   );
 }

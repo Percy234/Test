@@ -1,9 +1,10 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import Button from '../components/Button';
 import '../css/productDetail.css';
 
 const productData = {
-    1: { name: 'Lavender', description: 'A beautiful versatile aroma of lavender and rosemary essential oils induces calm and promotes restful sleep. A perfect antidote to hectic days will help to create a soothing ambience in your home.', img: '/img/essential oil/1.png' },
+    1: { name: 'Lavender', description: 'A beautiful versatile aroma of lavender and rosemary essential oils induces calm and promotes restful sleep. A perfect antidote to hectic days will help to create a soothing ambience in your home.', img: '/img/essential oil/1.png', price: 10, rating: 5 },
     2: { name: 'Pomelo', description: 'In addition to its common use in hair care, pomelo essential oil can also be used to fragrance a room and deodorize areas affected by smoking. Ecolife essential oil is completely derived from pomelo and is safe for your health, providing you with peace of mind when using it.', img: '/img/essential oil/2.png' },
     3: { name: 'Puroleo', description: 'Fresh and Minty - Our pure peppermint oil perspires a cool refreshing aroma of freshly crushed peppermint leaves. With strong hints of minty sweet notes, our peppermint essential oil relaxes the mind, body and soul from within.', img: '/img/essential oil/3.png' },
     4: { name: 'Longevity', description: 'Nanogize Ginseng Oil helps to overcome some conditions that cause pain such as arthritis and muscle pain. The oil helps blood circulation, dispelling persistent pain. From there, it brings a more comfortable mood because the oil has a gentle, hot and warm ginseng aroma.', img: '/img/essential oil/4.png' },
@@ -30,6 +31,21 @@ export default function ProductDetail() {
             <img src={product.img} alt={product.name} />
             <h2>{product.name}</h2>
             <p>{product.description}</p>
+
+            <div className="product-info">
+                <p>{product.price}</p>
+                <ul>
+                    {Array.from({ length: product.rating }, (_, index) => (
+                        <li>
+                            <i key={index} className="bi bi-star-fill"></i>
+                        </li> 
+                    ))}
+                </ul>
+            </div>
+            <div className="button-group">
+                <Button type="primary" icon={<i className="bi bi-cart-dash"></i>} label="Add to cart"/>
+                <Button type="normal" icon={<i className="bi bi-cart-dash"></i>} label="Buy now"/>
+            </div>
         </div>
     );
 }

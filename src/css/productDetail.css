@@ -27,3 +27,13 @@
     font-size: 1.2em;
     color: var(--slate-gray);
 }
+.product-info {
+    display: flex;
+    justify-content: space-between;
+}
+.product-info ul li {
+    display: inline-block;
+    list-style: none;
+    color: yellow;
+    margin: 0 2px;
+}
