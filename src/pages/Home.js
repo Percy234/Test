@@ -79,9 +79,10 @@ export default function Home() {
                 <section className="Products">
                     <h2>Products</h2>
                     <p>Our products are made from natural ingredients and are safe for your health</p>
-                    <div className="product-list">
+                    <div className="product-list" >
                         {products.map((product)=>(
                             <div key={product.id} className="product">
+                                
                                 <img src={product.image} alt={product.name}/>
                                 <h3>{product.name}</h3>
                                 <p>{product.description}</p>
