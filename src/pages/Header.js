@@ -39,7 +39,7 @@ export default function Header() {
                     {
                         showLogInForm && <LogInForm closeForm={() => setShowLogInForm(false)} />
                     }
-                    <CartBtn link="/cart" />
+                    <CartBtn link="/cart"/>
                 </div>
             </header>
         </div>
