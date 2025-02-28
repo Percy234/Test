@@ -47,4 +47,10 @@
 }
 .c2{
     text-align: right;
+    bottom: 20px;
+}
+.footer-map {
+    width: 80%;
+    height: 40px;
+    margin-top: 20px;
 }

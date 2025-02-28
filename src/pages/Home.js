@@ -32,24 +32,28 @@ export default function Home() {
     const services = [
         {
             id: 1,
-            name: "Physiotherapy & Rehabilitation",
-            description: "Treatment for joint pain, spinal degeneration, herniated discs, sciatica, and more.",
+            name: "Massage Therapy",
+            image: "/img/massage/massage.png",
+            description: "Massage therapy is a treatment that uses kneading, pressure points, and body manipulation techniques to help relax muscles, reduce stress, and improve blood circulation.",
         },
         {
             id: 2,
-            name: "Spinal Care",
-            description: "Stretching and spinal adjustment therapies to alleviate pain and enhance flexibility.",
+            name: "Hair Care",
+            image: "/img/beauty_aids/hair.png",
+            description: "Hair care is an important part of maintaining healthy, smooth hair and minimizing damage. An effective hair care routine usually includes steps such as cleaning, moisturizing, protecting and nourishing hair from the inside.",
         },
-        {
-            id: 3,
-            name: "Post-Injury & Post-Surgery Therapy",
-            description: "Recovery support after accidents, joint replacement surgeries, and sports injuries",
-        },
-        {
-            id: 4,
-            name: "",
-            description: "",
-        }
+        // {
+        //     id: 3,
+        //     name: "",
+        //     image: "",
+        //     description: "",
+        // },
+        // {
+        //     id: 4,
+        //     name: "",
+        //     image: "",
+        //     description: "",
+        // }
     ];
     return (
         <div className="home">
@@ -91,6 +95,7 @@ export default function Home() {
                       <div className="service-list">
                         {services.map((service)=>(
                             <div key={service.id} className="service">
+                                <img src={service.image} alt={service.name}/>
                                 <h3>{service.name}</h3>
                                 <p>{service.description}</p>
                             </div>

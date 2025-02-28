@@ -27,6 +27,8 @@ const Footer = () => {
 
     setTime(`${hours}:${minutes}:${seconds} - ${day}/${month}/${year}`);
   }, 1000)
+  const mapLocation = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d982.1991288208391!2d105.77892893781716!3d10.033643724782094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0881f9a732075%3A0xfa43fbeb2b00ca73!2sCUSC%20-%20Cantho%20University%20Software%20Center!5e0!3m2!1svi!2s!4v1739939858544!5m2!1svi!2s";
+
   return (
     <footer className="footer">
       <div className='grid'>
@@ -87,6 +89,9 @@ const Footer = () => {
             </div>
             <div className='grid__colum-2-4'>
               <h3 className='footer-heading'>Map</h3>
+              <div className="footer-map">
+              <iframe title="Contact" src={mapLocation} width="100%" height="300%" frameBorder="0" style={{ border: 0 }} allowFullScreen></iframe>
+              </div>
             </div>
         </div>
       </div>
