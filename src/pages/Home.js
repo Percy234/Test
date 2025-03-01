@@ -1,16 +1,17 @@
 import React from "react";
 import '../css/Home.css';
+import { Link } from "react-router-dom";
 
 export default function Home() {
     const products = [
         {
-            id: 1,
-            name: "Essential Oil",
-            description: "Description for Essential Oil 2",
+            id: 2,
+            name: "Pomelo",
+            description: "In addition to its common use in hair care, pomelo essential oil can also be used to fragrance a room and deodorize areas affected by smoking. Ecolife essential oil is completely derived from pomelo and is safe for your health, providing you with peace of mind when using it.'",
             image: "/img/essential oil/2.png",
         },
         {
-            id: 2,
+            id: 5,
             name: "Lotion",
             description: "Description for Lotion 1",
             image: "/img/lotions/1.png",
@@ -42,18 +43,6 @@ export default function Home() {
             image: "/img/beauty_aids/hair.png",
             description: "Hair care is an important part of maintaining healthy, smooth hair and minimizing damage. An effective hair care routine usually includes steps such as cleaning, moisturizing, protecting and nourishing hair from the inside.",
         },
-        // {
-        //     id: 3,
-        //     name: "",
-        //     image: "",
-        //     description: "",
-        // },
-        // {
-        //     id: 4,
-        //     name: "",
-        //     image: "",
-        //     description: "",
-        // }
     ];
     return (
         <div className="home">
@@ -82,10 +71,11 @@ export default function Home() {
                     <div className="product-list" >
                         {products.map((product)=>(
                             <div key={product.id} className="product">
-                                
-                                <img src={product.image} alt={product.name}/>
-                                <h3>{product.name}</h3>
-                                <p>{product.description}</p>
+                                <Link to={`/products/${product.id}`}>
+                                    <img src={product.image} alt={product.name}/>
+                                    <h3>{product.name}</h3>
+                                    <p>{product.description}</p>
+                                </Link>
                             </div>
                             ))}
                     </div>
@@ -96,9 +86,11 @@ export default function Home() {
                       <div className="service-list">
                         {services.map((service)=>(
                             <div key={service.id} className="service">
-                                <img src={service.image} alt={service.name}/>
-                                <h3>{service.name}</h3>
-                                <p>{service.description}</p>
+                                <Link to={`/services`}>
+                                    <img src={service.image} alt={service.name}/>
+                                    <h3>{service.name}</h3>
+                                    <p>{service.description}</p>
+                                </Link>
                             </div>
                             ))}
                       </div>

@@ -4,33 +4,33 @@
         "id": 1,
         "img": "/img/essential oil/1.png",
         "name": "Lavender",
-        "description": "Description for Essential Oil 1",
-        "price": "50",
-        "rating": 4.5
+        "description": "The most popular and preferred essential oil thanks to its mild fragrance.",
+        "price": 20,
+        "rating": 4
       },
       {
         "id": 2,
         "img": "/img/essential oil/2.png",
         "name": "Pomelo",
-        "description": "Description for Essential Oil 2",
-        "price": "50",
+        "description": "Fresh, pleasant fragrance and has many useful uses in beauty",
+        "price": 10,
         "rating": 5
       },
       {
         "id": 3,
         "img": "/img/essential oil/3.png",
         "name": "Puroleo",
-        "description": "Description for Essential Oil 3",
-        "price": 300,
-        "rating": 3.5
+        "description": "Puroleo stands out for its moisturizing, soothing and skin-restoring properties.",
+        "price": 20,
+        "rating": 5
       },
       {
         "id": 4,
         "img": "/img/essential oil/4.png",
         "name": "Longevity",
-        "description": "Description for Essential Oil 4",
-        "price": 400,
-        "rating": 3.0
+        "description": "Longevity Oil is a special oil known for its ability to support health and longevity.",
+        "price": 25,
+        "rating": 5
       }
     ],
     "Lotion": [
@@ -38,33 +38,34 @@
         "id": 5,
         "img": "/img/lotions/1.png",
         "name": "Bee Natural",
-        "description": "Description for Lotion 1",
-        "price": 400,
-        "rating": 3.0
+        "description": "Skin cream with main ingredients from beeswax and natural extracts.",
+        "price": 20,
+        "rating": 4
       },
       {
         "id": 6,
         "img": "/img/lotions/2.png",
         "name": "Exxtra Care & Repair",
-        "description": "Description for Lotion 2",
-        "price": 400,
-        "rating": 3.0
+        "description": "Vegan Friendly. Beauty without Cruelty.",
+        "sale":15,
+        "price": 30,
+        "rating": 5
       },
       {
         "id": 7,
         "img": "/img/lotions/3.png",
-        "name": "Vanilla Dream Serum Body Lotion",
-        "description": "Description for Lotion 3",
-        "price": 400,
-        "rating": 3.0
+        "name": "Vanilla Dream Serum Body",
+        "description": "Feel free on an exciting journey in the scent of sweet vanilla. ",
+        "price": 20,
+        "rating": 5
       },
       {
         "id": 8,
         "img": "/img/lotions/4.png",
         "name": "Strawberry Dream",
-        "description": "Description for Lotion 4",
-        "price": 400,
-        "rating": 3.0
+        "description": "Features notes of sparkling strawberry, pink sugar & vanilla cream.",
+        "price": 35,
+        "rating": 5
       }
     ],
     "Helping Machine": [
@@ -72,34 +73,34 @@
         "id": 9,
         "img": "/img/helping machines/1.png",
         "name": "Handheld Massager",
-        "description": "Description for Helping Machine 1",
-        "price": 400,
-        "sale"  : 300,
-        "rating": 3.0
+        "description": "Therapist Select Prime Percussion Massager",
+        "price": 30,
+        "sale"  : 25,
+        "rating": 4.0
       },
       {
         "id": 10,
         "img": "/img/helping machines/2.png",
         "name": "Neck Massager",
-        "description": "Description for Helping Machine 2",
-        "price": 400,
-        "rating": 3.0
+        "description": "Allow yourself to relax and unwind after a long day of work with this Neck Massager.",
+        "price": 50,
+        "rating": 4.0
       },
       {
         "id": 11,
         "img": "/img/helping machines/3.png",
         "name": "Eye Massager",
-        "description": "Description for Helping Machine 3",
-        "price": 400,
-        "rating": 3.0
+        "description": "Massage machine to reduce eye bags and dark circles",
+        "price": 60,
+        "rating": 5.0
       },
       {
         "id": 12,
         "img": "/img/helping machines/4.png",
         "name": "Electric Foot Massagers",
-        "description": "Description for Helping Machine 4",
-        "price": 400,
-        "rating": 3.0
+        "description": "Modern equipment helps relax and improve foot health after a long day of work.",
+        "price": 70,
+        "rating": 5.0
       }
     ]
   }

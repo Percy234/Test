@@ -63,17 +63,21 @@
 .category h3 {
     font-size: 20px;
     margin: 0;
-    color: var(--color-category-title);
+    color: var(--color-steelblue);
 }
 
 .category p {
     margin: 5px 0 0;
     color: var(--color-category-text);
 }
+.productDescrition {
+    font-size: 16px;
+    color: var(--color-category-text);
+}
 .price {
     margin:0 6px;
 }
 .sale {
-    color: red;
+    color: var(--color-steelblue);
     text-decoration: line-through;
 }

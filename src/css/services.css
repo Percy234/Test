@@ -3,7 +3,6 @@
     padding: 20px;
     font-family: Arial, sans-serif;
 }
-
 .services-tabs {
     display: flex;
     justify-content: center;
@@ -33,7 +32,7 @@
 }
 
 .tab-content {
-    padding: 20px;
+    padding: 0 50px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #fafafa;
@@ -68,4 +67,25 @@
     font-size: 1em;
     line-height: 1.6;
     text-align: justify;
+}
+#service-btns {
+    display: flex;
+    margin-top: 20px;
+}
+#service-btns button {
+    background-color: var(--color-lightblue);
+    border: 1px solid #ccc;
+    padding: 4px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+}
+.service-btn{
+    color: var(--primary-black);
+    padding: 4px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
 }

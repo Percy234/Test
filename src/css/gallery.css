@@ -41,3 +41,7 @@
 .gallery-img:hover {
     transform: scale(1.1);
 }
+.gallery-description {
+    padding: 10px;
+    margin-top: 16px;
+}
