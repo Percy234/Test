@@ -46,11 +46,12 @@ export default function Home() {
     ];
     return (
         <div className="home">
-            <div className="home-img"></div>
+            
             <div className="home-content">
                 <section className="Contents">
                     <h1>PHYSIOTHERAPY CLINIC – COMPREHENSIVE HEALTHCARE</h1> <hr></hr>
                     <p><h3>About Our Clinic</h3>At <b>Zara Therapy Clinic</b>, we specialize in physiotherapy and rehabilitation services to help patients improve joint health, relieve pain, and restore mobility. With a team of experienced specialists and state-of-the-art equipment, we are committed to providing safe, effective, and personalized treatment solutions.</p>
+                    <div className="home-img"></div>
                     <hr></hr>
                     <p><h3>Our Key Services</h3>
                     <p>🔹 Physiotherapy & Rehabilitation: Treatment for joint pain, spinal degeneration, herniated discs, sciatica, and more.</p>
