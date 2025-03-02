@@ -19,7 +19,9 @@ export default function Header() {
 
                 <button className="menu-toggle" onClick={() => setShowMenu(!showMenu)}><i className="bi bi-list"></i></button> { /* thanh menu */}
                 <h1 className="logo">
-                    <img src="/img/Container/img-logo.jpg" alt="Logo"/>
+                    <Link to="/home">
+                        <img src="/img/Container/img-logo.jpg" alt="Logo"/>
+                    </Link>
                     Zara Therapy Clinic
                 </h1>
                 {/* list nav */}

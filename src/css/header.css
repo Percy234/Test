@@ -21,6 +21,9 @@ header {
   height: 90px;
   background-size: cover;
 }
+.logo img:hover {
+  transform: scale(1.1);
+}
 nav {
   flex-grow: 1;
 }

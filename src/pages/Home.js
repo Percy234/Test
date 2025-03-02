@@ -7,25 +7,25 @@ export default function Home() {
         {
             id: 2,
             name: "Pomelo",
-            description: "In addition to its common use in hair care, pomelo essential oil can also be used to fragrance a room and deodorize areas affected by smoking. Ecolife essential oil is completely derived from pomelo and is safe for your health, providing you with peace of mind when using it.'",
+            description: "Fresh, pleasant fragrance and has many useful uses in beauty",
             image: "/img/essential oil/2.png",
         },
         {
             id: 5,
-            name: "Lotion",
-            description: "Description for Lotion 1",
+            name: "Bee Natural",
+            description: "Skin cream with main ingredients from beeswax and natural extracts.",
             image: "/img/lotions/1.png",
         },
         {
-            id: 3,
-            name: "Helping Machine",
-            description: "Description for Helping Machine 2",
+            id: 10,
+            name: "Neck Massager",
+            description: "Allow yourself to relax and unwind after a long day of work with this Neck Massager.",
             image: "/img/helping machines/2.png",
         },
         {
-            id: 4,
-            name: "Lotion",
-            description: "Description for Lotion 3",
+            id: 7,
+            name: "Vanilla Dream Serum Body",
+            description: "Feel free on an exciting journey in the scent of sweet vanilla.",
             image: "/img/lotions/3.png",
         }
         
@@ -72,7 +72,7 @@ export default function Home() {
                     <div className="product-list" >
                         {products.map((product)=>(
                             <div key={product.id} className="product">
-                                <Link to={`/products/${product.id}`}>
+                                <Link className="link" to={`/products/${product.id}`}>
                                     <img src={product.image} alt={product.name}/>
                                     <h3>{product.name}</h3>
                                     <p>{product.description}</p>
@@ -87,7 +87,7 @@ export default function Home() {
                       <div className="service-list">
                         {services.map((service)=>(
                             <div key={service.id} className="service">
-                                <Link to={`/services`}>
+                                <Link className="link" to={`/services`}>
                                     <img src={service.image} alt={service.name}/>
                                     <h3>{service.name}</h3>
                                     <p>{service.description}</p>
