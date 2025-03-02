@@ -40,7 +40,6 @@ function App() {
       <Footer />
       <button className="btnTop" onClick={scollToTop}><i className="bi bi-house-door-fill"></i></button>
       <button className="btnShop-Mobile"><i className="bi bi-cart-dash"><CartBtn path="/cart"/></i></button>
-      <PageViewCounter />
     </Router>
   );
 }

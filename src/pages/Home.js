@@ -1,6 +1,7 @@
 import React from "react";
 import '../css/Home.css';
 import { Link } from "react-router-dom";
+import PageViewCounter from "../components/ViewCounter";
 
 export default function Home() {
     const products = [
@@ -46,7 +47,7 @@ export default function Home() {
     ];
     return (
         <div className="home">
-            
+            <PageViewCounter />
             <div className="home-content">
                 <section className="Contents">
                     <h1>PHYSIOTHERAPY CLINIC – COMPREHENSIVE HEALTHCARE</h1> <hr></hr>

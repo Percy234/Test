@@ -27,9 +27,9 @@
     display: none;
  }
  .page-view-counter {
-      position: fixed;
-      bottom: 80px;
-      right: 0;
+      position: absolute;
+      top: 0px;
+      left: 0px;
       color: black;
       border: none;
       padding: 2px;

@@ -8,7 +8,7 @@ import '../css/footer.css';
 const Footer = () => {
   let currentDate = new Date();
   let year = currentDate.getFullYear();
-  let month = currentDate.getMonth() + 1; // Tháng bắt đầu từ 0
+  let month = currentDate.getMonth() + 1; 
   let day = currentDate.getDate();
   let hours = currentDate.getHours();
   let minutes = currentDate.getMinutes();
@@ -19,7 +19,7 @@ const Footer = () => {
   setInterval(() => {
     currentDate = new Date();
     year = currentDate.getFullYear();
-    month = currentDate.getMonth() + 1; // Tháng bắt đầu từ 0
+    month = currentDate.getMonth() + 1; 
     day = currentDate.getDate();
     hours = currentDate.getHours();
     minutes = currentDate.getMinutes();
@@ -34,53 +34,61 @@ const Footer = () => {
       <div className='grid'>
         <div className='grid-row'>
             <div className='grid__colum-2-4'>
-              <h3 className='footer-heading'>Chăm sóc khách hàng</h3>
+              <h3 className='footer-heading'>Customer Care</h3>
               <ul className="footer-list">
                         <li className="footer-list-item">
-                            <a href="" className="footer-list-item-link">Trung tâm trợ giúp</a>
+                            <a href="/contact" className="footer-list-item-link">FAQ</a>
                         </li>
                         <li className="footer-list-item">
-                            <a href="" className="footer-list-item-link">ZTC Mall</a>
+                            <a href="/contact" className="footer-list-item-link">ZTC Mall</a>
                         </li>
                         <li className="footer-list-item">
-                            <a href="" className="footer-list-item-link">Hướng dẫn mua hàng</a>
+                            <a href="/contact" className="footer-list-item-link">Buying Guide</a>
                         </li>
                     </ul>
             </div>
             <div className='grid__colum-2-4'>
-              <h3 className='footer-heading'>Giới thiệu</h3>
+              <h3 className='footer-heading'>Introduce</h3>
               <ul className="footer-list">
                         <li className="footer-list-item">
-                            <a href="" className="footer-list-item-link">Giới thiệu</a>
+                            <a href="/about" className="footer-list-item-link">Introduce</a>
                         </li>
                         <li className="footer-list-item">
-                            <a href="" className="footer-list-item-link">Tuyển dụng</a>
+                            <a href="/contact" className="footer-list-item-link">Recruitment</a>
                         </li>
                         <li className="footer-list-item">
-                            <a href="" className="footer-list-item-link">Điều khoảng</a>
+                            <a href="/contact" className="footer-list-item-link">Clause</a>
                         </li>
                     </ul>
             </div>
             <div className='grid__colum-2-4'>
-              <h3 className='footer-heading'>Danh mục</h3>
-            </div>
-            <div className='grid__colum-2-4'>
-              <h3 className='footer-heading'>Theo dõi</h3>
+              <h3 className='footer-heading'>Category</h3>
               <ul className="footer-list">
                         <li className="footer-list-item">
-                            <a href="" className="footer-list-item-link">
+                            <a href="/products" className="footer-list-item-link">Products</a>
+                        </li>
+                        <li className="footer-list-item">
+                            <a href="/services" className="footer-list-item-link">Services</a>
+                        </li>
+                </ul>
+            </div>
+            <div className='grid__colum-2-4'>
+              <h3 className='footer-heading'>Follow Us</h3>
+              <ul className="footer-list">
+                        <li className="footer-list-item">
+                            <a href="https://www.facebook.com" className="footer-list-item-link">
                                 <i className="bi bi-facebook "></i>
                                  Facebook
                             </a>
                         </li>
                         <li className="footer-list-item">
-                            <a href="" className="footer-list-item-link">
+                            <a href="https://www.instagram.com" className="footer-list-item-link">
                                 <i className="bi bi-instagram "></i>
                                  Instagram
                             </a>
                         </li>
                         <li className="footer-list-item">
-                            <a href="" className="footer-list-item-link">
+                            <a href="https://www.linkedin.com" className="footer-list-item-link">
                                 <i className="bi bi-linkedin "></i>
                                  Linkedin
                             </a>
@@ -95,7 +103,7 @@ const Footer = () => {
             </div>
         </div>
       </div>
-      <p className='c1'>&copy; Copyright 2023 My App. All rights reserved.</p>
+      <p className='c1'>&copy; Copyright 2024 My App. All rights reserved.</p>
       <p className='c2'>{time}</p>
     </footer>
   );

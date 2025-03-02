@@ -38,14 +38,6 @@ const AboutUs = () =>{
                     </p>
                 </div>
                 <div className='about__colum-2-4'>
-                    <h3 className="about-2-5">Free Consultation</h3>
-                    <p className="about-description">
-                        Zara Therapy Clinic encourages clients to maintain a regular health care routine to prevent and treat both physical and mental issues. 
-                        With a dedicated team of specialists, Zara Therapy Clinic is the ideal choice for those looking to regain their health and balance in life. 
-                        Our practitioners are very happy to give you a free consultation and guide you to the best service that can suit your medical needs. Just give us a call and book for a consultation.
-                    </p>
-                </div>
-                <div className='about__colum-2-4'>
                     <h3 className="about-2-5">Patient Care</h3>
                     <p className="about-description">
                         In addition to physical therapies, Zara Therapy Clinic also places a strong emphasis on building a healthy psychological environment for clients. 
@@ -54,6 +46,15 @@ const AboutUs = () =>{
                         enabling you to become an active participant in your recovery and future physical health.
                     </p>
                 </div>
+                <div className='about__colum-2-4'>
+                    <h3 className="about-2-5">Free Consultation</h3>
+                    <p className="about-description">
+                        Zara Therapy Clinic encourages clients to maintain a regular health care routine to prevent and treat both physical and mental issues. 
+                        With a dedicated team of specialists, Zara Therapy Clinic is the ideal choice for those looking to regain their health and balance in life. 
+                        Our practitioners are very happy to give you a free consultation and guide you to the best service that can suit your medical needs. Just give us a call and book for a consultation.
+                    </p>
+                </div>
+                
             </div>
         </div>
     </div>

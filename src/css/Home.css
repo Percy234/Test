@@ -5,9 +5,15 @@
     box-sizing: border-box;
     font-family: 'Cabin', sans-serif;
  }
+ .home {
+   position: relative;
+ }
 .home-content {
-    margin-top: 50px;
+    /* margin-top: 50px; */
     padding: 30px;
+}
+.Contents h1 {
+   margin-top: 50px;
 }
  .home-img {
    height: 70vh;
@@ -43,6 +49,18 @@
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
    background-color: var(--color-category-background);
    text-decoration: none;
+}
+.link {
+   text-decoration: none;
+}
+.product h3 {
+   color: var(--color-steelblue);
+   height: 60px;
+}
+.product p {
+   color: var(--color-category-text);
+   font-size: 16px;
+   text-align: justify;
 }
 .product:hover {
    transform: translateY(-7px);

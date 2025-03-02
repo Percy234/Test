@@ -172,6 +172,10 @@ nav {
   color: blue;
   cursor: pointer;
 }
+.listnav li a.active {
+  color: var(--color-lightskyblue);
+  font-weight: bold;
+}
 @media screen and (max-width: 924px) {
   .menu-toggle {
     display: block;
