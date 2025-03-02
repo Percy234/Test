@@ -14,6 +14,7 @@ import Gallery from './pages/Gallery';
 import Cart from './pages/Cart';
 import Therapists from './pages/Therapists'; // Import component Therapists
 import CartBtn from './components/CartBtn';
+import PageViewCounter from './components/ViewCounter'; //import component PageViewCounter
 
 function App() {
   const [showCart, setShowCart] = useState(false);
@@ -38,7 +39,8 @@ function App() {
       </Routes>
       <Footer />
       <button className="btnTop" onClick={scollToTop}><i className="bi bi-house-door-fill"></i></button>
-      <button className="btnShop-Mobile"><i className="bi bi-cart-dash"><CartBtn path="/cart"/></i></button> 
+      <button className="btnShop-Mobile"><i className="bi bi-cart-dash"><CartBtn path="/cart"/></i></button>
+      <PageViewCounter />
     </Router>
   );
 }

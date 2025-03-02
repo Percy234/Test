@@ -1,10 +1,9 @@
 import React, {use, useState} from "react";
 import "../css/header.css";
 
-export default function LogInForm({closeForm}) {
+export default function LogInForm({toggleForm, closeForm}) {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
-    
     const handleSubmit = ()=> {
         const caseCheck = new RegExp("[A-Z]");
 
@@ -34,7 +33,8 @@ export default function LogInForm({closeForm}) {
                     <input type="password" placeholder="Enter the Password" value={password} onChange={(event)=>setPassword(event.target.value)}></input><br></br>
                     <button type="submit" className="submit-toggle" onClick={handleSubmit}>Submit</button>
                     <button type="button"  className="cancel-toggle" onClick={closeForm}>Cancel</button>
-                    <p>You do not have account?<a href="#">Register</a></p>
+                    <p>You do not have account?<a><span onClick={toggleForm} className="link">Register</span></a></p>
+                    
                 </form>
             </div>
         </div>

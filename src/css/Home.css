@@ -33,6 +33,7 @@
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* điều chỉnh kích thước các cột */
    gap: 20px;
+   text-decoration: none;
 }
 .product {
    text-decoration: none;
@@ -41,20 +42,7 @@
    padding: 20px;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
    background-color: var(--color-category-background);
-}
-.link {
    text-decoration: none;
-   color: var(--color-category-text);
-}
-.product h3 {
-   color: var(--color-steelblue);
-   height: 70px;
-   padding-top: 10px;
-}
-.product p {
-   color: var(--color-category-text);
-   font-size: 16px;
-   text-align: center;
 }
 .product:hover {
    transform: translateY(-7px);

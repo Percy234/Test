@@ -167,7 +167,11 @@ nav {
   background-color: white;
   border-radius: 40%;
 }
-
+.link {
+  text-decoration: underline blue;
+  color: blue;
+  cursor: pointer;
+}
 @media screen and (max-width: 924px) {
   .menu-toggle {
     display: block;
