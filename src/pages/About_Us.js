@@ -60,8 +60,8 @@ const AboutUs = () =>{
         <div className="about-contact">
                 <h2>Contact Us</h2>
                 <p><i class="bi bi-geo-alt"> Address: 01 Lý Tự Trọng, Q.Ninh Kiều, TP.Cần Thơ</i></p>
-                <p><i class="bi bi-telephone"> Fax: +84 292 373 1071</i></p>
-                <p><i class="bi bi-envelope-at"> Mail: cusc@ctu.edu.vn</i></p>
+                <p><i class="bi bi-telephone"> Fax: +84 292 373 1071</i></p>           
+                <p><a class="bi bi-envelope-at" href="mailto:cusc@ctu.edu.vn?subject=Tiêu đề&body=Nội dung"> Mail: cusc@ctu.edu.vn</a></p> 
                 <br></br>
                 <hr></hr>
                 <br></br>
