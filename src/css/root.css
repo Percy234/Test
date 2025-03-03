@@ -2,23 +2,23 @@
     --black-color: #333;
     --primary-black: #000;
     --red-color: #ff0000;
-    --color-steelblue: #4682B4; /* SteelBlue */
-    --color-aliceblue: #F0F8FF; /* AliceBlue */
-    --color-lightskyblue: #87CEFA; /* LightSkyBlue */
-    --color-skyblue: #87CEEB; /* SkyBlue */
-    --color-lightblue: #ADD8E6; /* LightBlue */
-    --color-black: #000000; /* Black */
-    --color-lightgray: rgb(246, 246, 246); /* LightGray */
-    --color-overlay: rgba(110, 105, 105, 0.489); /* Overlay */
-    --color-menu-hover: #97FFFF; /* Menu Hover */
-    --color-product-background: #fff; /* Product Background */
-    --color-product-text: #000; /* Product Text */
-    --color-product-border: #ddd; /* Product Border */
-    --color-product-title: #333; /* Product Title */
-    --color-category-border: #ccc; /* Category Border */
-    --color-category-title: #1737c3; /* Category Title */
-    --color-category-background: #f9f9f9; /* Category Background */
-    --color-category-text: #666; /* Category Text */
-    --color-category-hover-shadow: rgba(0, 0, 0, 0.2); /* Category Hover Shadow */
-    --color-category-box-shadow: rgba(0, 0, 0, 0.1); /* Category Box Shadow */
+    --color-steelblue: #4682B4; 
+    --color-aliceblue: #F0F8FF; 
+    --color-lightskyblue: #87CEFA; 
+    --color-skyblue: #87CEEB; 
+    --color-lightblue: #ADD8E6; 
+    --color-black: #000000;
+    --color-lightgray: rgb(246, 246, 246); 
+    --color-overlay: rgba(110, 105, 105, 0.489); 
+    --color-menu-hover: #97FFFF; 
+    --color-product-background: #fff; 
+    --color-product-text: #000; 
+    --color-product-border: #ddd;
+    --color-product-title: #333; 
+    --color-category-border: #ccc; 
+    --color-category-title: #1737c3; 
+    --color-category-background: #f9f9f9;
+    --color-category-text: #666; 
+    --color-category-hover-shadow: rgba(0, 0, 0, 0.2); 
+    --color-category-box-shadow: rgba(0, 0, 0, 0.1); 
 }

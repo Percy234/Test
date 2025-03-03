@@ -1,7 +1,12 @@
 @import url('main.css');
 
 .therapists-container {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-family: Arial, sans-serif;
 }
 
@@ -12,30 +17,31 @@
 
 .therapists-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 }
 
 .therapist-item {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    color: inherit;
 }
 
 .therapist-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .therapist-img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
+    height: auto;
+    border-radius: 50%;
     margin-bottom: 10px;
 }
 
@@ -53,4 +59,29 @@
 .therapist-item p {
     font-size: 0.9em;
     color: #555;
+}
+
+.therapist-details-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.therapist-details-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.therapist-details-container img {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+}
+
+.therapist-details-container p {
+    margin-bottom: 10px;
+    line-height: 1.6;
 }

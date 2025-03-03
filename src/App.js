@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import './css/main.css';
@@ -14,11 +13,11 @@ import Contact from './pages/Contact_Us';
 import Gallery from './pages/Gallery';
 import Cart from './pages/Cart';
 import Therapists from './pages/Therapists'; 
-import CartBtn from './components/CartBtn';
+import TherapistsDetail from './pages/TherapistsDetail';
 import Feedback from './pages/Feedback'; 
 
 function App() {
-  const [showCart, setShowCart] = useState(false);
+
   const scollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
@@ -37,6 +36,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/therapists" element={<Therapists />} />
+        <Route path="/therapists/:therapistId" element={<TherapistsDetail />} />
         <Route path="/feedback" element={<Feedback />} />
       </Routes>
       <Footer />
