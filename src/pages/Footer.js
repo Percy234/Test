@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import '../css/footer.css';
+import PageViewCounter from '../components/ViewCounter';
 
 
 // import './Footer.css'; // Import CSS file for styling
@@ -31,6 +32,8 @@ const Footer = () => {
 
   return (
     <footer className="footer">
+            
+
       <div className='grid'>
         <div className='grid-row'>
             <div className='grid__colum-2-4'>
@@ -105,6 +108,7 @@ const Footer = () => {
       </div>
       <p className='c1'>&copy; Copyright 2024 My App. All rights reserved.</p>
       <p className='c2'>{time}</p>
+      
     </footer>
   );
 };
