@@ -12,9 +12,9 @@ import Services from './pages/Services';
 import Contact from './pages/Contact_Us';
 import Gallery from './pages/Gallery';
 import Cart from './pages/Cart';
-import Therapists from './pages/Therapists'; // Import component Therapists
+import Therapists from './pages/Therapists'; 
 import CartBtn from './components/CartBtn';
-import PageViewCounter from './components/ViewCounter'; //import component PageViewCounter
+import Feedback from './pages/Feedback'; 
 
 function App() {
   const [showCart, setShowCart] = useState(false);
@@ -35,7 +35,8 @@ function App() {
         <Route path="/contact" element={<Contact />} /> 
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/therapists" element={<Therapists />} /> {/* Thêm route cho trang Therapists */}
+        <Route path="/therapists" element={<Therapists />} />
+        <Route path="/feedback" element={<Feedback />} />
       </Routes>
       <Footer />
       <button className="btnTop" onClick={scollToTop}><i className="bi bi-house-door-fill"></i></button>

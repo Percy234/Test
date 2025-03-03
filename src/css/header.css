@@ -56,6 +56,10 @@ nav {
   width: 100%;
   color: var(--color-lightblue);
 }
+.listnav li a.active {
+  color: var(--color-lightblue);
+  font-weight: bold;
+}
 
 /* .listnav > * {
   text-decoration: none;
