@@ -47,42 +47,16 @@ export default function Home() {
     ];
     return (
         <div className="home">
-            <PageViewCounter />
             <div className="home-content">
                 <section className="Contents">
-                    <h1>PHYSIOTHERAPY CLINIC – COMPREHENSIVE HEALTHCARE</h1> <hr></hr>
-                    <p><h3>About Our Clinic</h3>At <b>Zara Therapy Clinic</b>, we specialize in physiotherapy and rehabilitation services to help patients improve joint health, relieve pain, and restore mobility. With a team of experienced specialists and state-of-the-art equipment, we are committed to providing safe, effective, and personalized treatment solutions.</p>
-                    <div className="home-img"></div>
-                    <hr></hr>
-                    <p><h3>Our Key Services</h3>
-                    <p>🔹 Physiotherapy & Rehabilitation: Treatment for joint pain, spinal degeneration, herniated discs, sciatica, and more.</p>
-                    <p>🔹 Spinal Care: Stretching and spinal adjustment therapies to alleviate pain and enhance flexibility.</p>
-                    <p>🔹 Post-Injury & Post-Surgery Therapy: Recovery support after accidents, joint replacement surgeries, and sports injuries.</p>
-                    <p>🔹 Therapeutic Massage: Muscle relaxation, stress relief, and improved blood circulation.</p>
-                    <p>🔹 Exercise & Rehabilitation Guidance: Personalized exercise programs to maintain health and prevent relapse.</p>
-                    </p>
-                    <hr></hr>
-                    <h3>Healthcare Products</h3>
-                    <p><b><a>Dietary supplements</a></b> for bone and joint health, better sleep, and digestive support.</p>
-                    <p><b><a>Pain relief balms & patches</a></b> for quick pain relief and muscle relaxation.</p>
-                    <p><b><a> Rehabilitation & exercise equipment</a></b>  such as lumbar supports, orthopedic braces, massage pillows, and physiotherapy machines.</p>
-                </section>
-                <section className="Products">
-                    <h2>Products</h2>
-                    <p>Our products are made from natural ingredients and are safe for your health</p>
-                    <div className="product-list" >
-                        {products.map((product)=>(
-                            <div key={product.id} className="product">
-                                <Link className="link" to={`/products/${product.id}`}>
-                                    <img src={product.image} alt={product.name}/>
-                                    <h3>{product.name}</h3>
-                                    <p>{product.description}</p>
-                                </Link>
-                            </div>
-                            ))}
+                    <div className="home-img">
+                    <h1>PHYSIOTHERAPY CLINIC – COMPREHENSIVE HEALTHCARE</h1>
                     </div>
-                </section>
-                <section className="Services">
+                     <hr></hr>
+                    <p><h3>About Our Clinic</h3>At <b>Zara Therapy Clinic</b>, we specialize in physiotherapy and rehabilitation services to help patients improve joint health, relieve pain, and restore mobility. With a team of experienced specialists and state-of-the-art equipment, we are committed to providing safe, effective, and personalized treatment solutions.</p>
+                    <hr></hr>
+                    
+                    <section className="Services">
                     <h2>Services</h2>
                     <p>Our clinic offers a wide range of services to help you recover from injuries, manage chronic conditions, and improve your overall health and well-being.</p>
                       <div className="service-list">
@@ -96,8 +70,39 @@ export default function Home() {
                             </div>
                             ))}
                       </div>
+                      <p><h3>Our Key Services</h3>
+                    <p>🔹 Physiotherapy & Rehabilitation: Treatment for joint pain, spinal degeneration, herniated discs, sciatica, and more.</p>
+                    <p>🔹 Spinal Care: Stretching and spinal adjustment therapies to alleviate pain and enhance flexibility.</p>
+                    <p>🔹 Post-Injury & Post-Surgery Therapy: Recovery support after accidents, joint replacement surgeries, and sports injuries.</p>
+                    <p>🔹 Therapeutic Massage: Muscle relaxation, stress relief, and improved blood circulation.</p>
+                    <p>🔹 Exercise & Rehabilitation Guidance: Personalized exercise programs to maintain health and prevent relapse.</p>
+                    </p>
+                    <hr></hr>
                 </section>
+
+                    
+                    <section className="Products">
+                    <h2>Products</h2>
+                    <p>Our products are made from natural ingredients and are safe for your health</p>
+                    <div className="product-list" >
+                        {products.map((product)=>(
+                            <div key={product.id} className="product">
+                                <Link className="link" to={`/products/${product.id}`}>
+                                    <img src={product.image} alt={product.name}/>
+                                    <h3>{product.name}</h3>
+                                    <p>{product.description}</p>
+                                </Link>
+                            </div>
+                            ))}
+                    </div>
+                    <h3>Healthcare Products</h3>
+                    <p><b><a>Dietary supplements</a></b> for bone and joint health, better sleep, and digestive support.</p>
+                    <p><b><a>Pain relief balms & patches</a></b> for quick pain relief and muscle relaxation.</p>
+                    <p><b><a> Rehabilitation & exercise equipment</a></b>  such as lumbar supports, orthopedic braces, massage pillows, and physiotherapy machines.</p>
+                </section>
+                    </section> {/*  end of Contents */}
             </div>
+            <PageViewCounter />
         </div>
     )
 

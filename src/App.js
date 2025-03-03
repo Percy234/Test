@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './css/main.css';
 import Header from './pages/Header';
 import Footer from './pages/Footer';
@@ -40,7 +41,7 @@ function App() {
       </Routes>
       <Footer />
       <button className="btnTop" onClick={scollToTop}><i className="bi bi-house-door-fill"></i></button>
-      <button className="btnShop-Mobile"><i className="bi bi-cart-dash"><CartBtn path="/cart"/></i></button>
+      <Link to="/cart"><button className="btnShop-Mobile" ><i className="bi bi-cart-dash"></i></button></Link>
     </Router>
   );
 }

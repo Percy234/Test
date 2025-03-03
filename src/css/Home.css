@@ -16,12 +16,13 @@
    margin-top: 50px;
 }
  .home-img {
-   height: 70vh;
+   height: 20vh;
    width: 100%;
-   background-image: url('/public/img/Container/img-4.jpg');
    background-size: cover;
    overflow: hidden;
- }
+   margin: 0;
+   background-size: cover;
+}
 .home-introduce {
    top: 50%;
    left: 10%; 
