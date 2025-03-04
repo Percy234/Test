@@ -21,6 +21,10 @@ export default function RegisterForm({ toggleForm, closeForm }) {
             alert("Passwords do not match");
             return;
         }
+
+        const user = { username, password, email };
+        localStorage.setItem("user", JSON.stringify(user));
+
         alert("Registration Successful!");
         closeForm();
     };

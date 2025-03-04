@@ -9,23 +9,26 @@ export default function LogInForm({ closeForm }) {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        const caseCheck = new RegExp("[A-Z]");
 
-        if (!password && !username) {
-            alert("Please login!");
+        if (!username || !password) {
+            alert("Please fill in all fields!");
             return;
         }
-        if (!caseCheck.test(username)) {
-            alert("Username must contain at least one uppercase letter");
+
+        const storedUser = JSON.parse(localStorage.getItem("user"));
+
+        if (!storedUser) {
+            alert("No registered user found. Please register first.");
             return;
         }
-        if (password.length < 6 || password.length > 12) {
-            alert("Password must be between 6 and 12 characters");
+
+        if (username !== storedUser.username || password !== storedUser.password) {
+            alert("Invalid username or password");
             return;
-        } else {
-            alert("Log In Successful!");
-            closeForm();
         }
+
+        alert("Log In Successful!");
+        closeForm();
     };
 
     const toggleForm = () => {

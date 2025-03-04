@@ -9,7 +9,6 @@ import Products from './pages/Products';
 import Home from './pages/Home';
 import ProductDetail from './pages/ProductDetail';
 import Services from './pages/Services';
-import Contact from './pages/Contact_Us';
 import Gallery from './pages/Gallery';
 import Cart from './pages/Cart';
 import Therapists from './pages/Therapists'; 
@@ -32,7 +31,6 @@ function App() {
         <Route path="/products/:productId" element={<ProductDetail />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/services" element={<Services />} /> 
-        <Route path="/contact" element={<Contact />} /> 
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/therapists" element={<Therapists />} />

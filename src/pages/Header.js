@@ -33,7 +33,6 @@ export default function Header() {
                     <li><Link to="/products" className={location.pathname === "/products" ? "active" : ""} onClick={() => setShowMenu(false)}>Products</Link></li>
                     <li><Link to="/services" className={location.pathname === "/services" ? "active" : ""} onClick={() => setShowMenu(false)}>Services</Link></li>
                     <li><Link to="/gallery" className={location.pathname === "/gallery" ? "active" : ""} onClick={() => setShowMenu(false)}>Gallery</Link></li>
-                    <li><Link to="/contact" className={location.pathname === "/contact" ? "active" : ""} onClick={() => setShowMenu(false)}>Contact Us</Link></li>
                     <li><Link to="/feedback" className={location.pathname === "/feedback" ? "active" : ""} onClick={() => setShowMenu(false)}>Feedback</Link></li> 
                 </ul>
 

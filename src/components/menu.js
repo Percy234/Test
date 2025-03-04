@@ -11,8 +11,8 @@ export default function Menubar({ closeMenu }) {
                 <Link to="/therapists" onClick={closeMenu}>Therapists</Link>
                 <Link to="/products" onClick={closeMenu}>Products</Link>
                 <Link to="/services" onClick={closeMenu}>Services</Link>
-                <Link to="/contact" onClick={closeMenu}>Contact Us</Link>
                 <Link to="/gallery" onClick={closeMenu}>Gallery</Link>
+                <Link to="/feedback" onClick={closeMenu}>Feedback</Link>
             </nav>
         </div>
     )
