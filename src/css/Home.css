@@ -5,17 +5,24 @@
     box-sizing: border-box;
     font-family: 'Cabin', sans-serif;
  }
+ .home {
+   position: relative;
+ }
 .home-content {
-    margin-top: 50px;
+    /* margin-top: 50px; */
     padding: 30px;
 }
+.Contents h1 {
+   margin-top: 50px;
+}
  .home-img {
-   height: 70vh;
+   height: 20vh;
    width: 100%;
-   background-image: url('/public/img/Container/img-4.jpg');
    background-size: cover;
    overflow: hidden;
- }
+   margin: 0;
+   background-size: cover;
+}
 .home-introduce {
    top: 50%;
    left: 10%; 
@@ -43,6 +50,18 @@
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
    background-color: var(--color-category-background);
    text-decoration: none;
+}
+.link {
+   text-decoration: none;
+}
+.product h3 {
+   color: var(--color-steelblue);
+   height: 60px;
+}
+.product p {
+   color: var(--color-category-text);
+   font-size: 16px;
+   text-align: justify;
 }
 
 .product:hover {
@@ -102,6 +121,7 @@ section {
    font-family: sans-serif;
    justify-content: center;
    text-align: center;
+   color: var(--color-steelblue);
 }
 .Contents p {
    font-size: 1.2em;

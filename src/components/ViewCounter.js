@@ -12,7 +12,7 @@ const PageViewCounter = () => {
 
   return (
     <div className="page-view-counter">
-      <p className=""><i class="bi bi-eye"></i>{views}</p>
+      <p className="">Visiter: {views}</p>
     </div>
   );
 };
