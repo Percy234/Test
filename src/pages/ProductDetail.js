@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import Button from '../components/Button';
 import '../css/productDetail.css';
+import { useNavigate } from 'react-router-dom';
 
 const productData = {
     1: { name: 'Lavender', description: 'A beautiful versatile aroma of lavender and rosemary essential oils induces calm and promotes restful sleep. A perfect antidote to hectic days will help to create a soothing ambience in your home.', img: '/img/essential oil/1.png', price: "Price: 20$", rating: 5 },
@@ -21,6 +22,7 @@ const productData = {
 export default function ProductDetail() {
     const { productId } = useParams();
     const product = productData[productId];
+    const navigate = useNavigate();
 
     if (!product) {
         return <h2>Product not found</h2>;
@@ -37,7 +39,10 @@ export default function ProductDetail() {
 
     return (
         <div className="product-detail">
-            <img src={product.img} alt={product.name} />
+            <div className="product-image-container">
+                <button className="close-button" onClick={() => navigate('/products')}>X</button>
+                <img src={product.img} alt={product.name} />
+            </div>
             <h2>{product.name}</h2>
             <p>{product.description}</p>
 
