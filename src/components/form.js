@@ -25,7 +25,7 @@ export default function LogInForm({toggleForm, closeForm}) {
         }
     };
     return(
-        <div className="overlay">
+        <div className="overlay-login">
             <div className="LogInForm">
                 <h2>Log In</h2>
                 <form>
