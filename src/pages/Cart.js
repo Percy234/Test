@@ -1,6 +1,16 @@
+import React, { useState } from "react";
 import "../css/cart.css";
 
 export default function Cart() {
+    const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+
+    const handleBuyNow = () => {
+        setShowSuccessMessage(true);
+        setTimeout(() => {
+            setShowSuccessMessage(false);
+        }, 1500); // Hide the message after 5 seconds
+    };
+
     return (
         <div id="cart-container">
             <h1>Cart</h1>
@@ -50,7 +60,14 @@ export default function Cart() {
                     </tr>
                 </tfoot>
             </table>
-            <div className="parent-container"><button className="buy-now-button">Buy Now</button></div>
+            <div className="parent-container">
+                <button className="buy-now-button" onClick={handleBuyNow}>Buy Now</button>
+            </div>
+            {showSuccessMessage && (
+                <div className="success-message">
+                    <p>Payment Successful!</p>
+                </div>
+            )}
         </div>
     );
 }

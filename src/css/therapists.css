@@ -14,9 +14,8 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 30px;
-    background-color: var(--bg-color);
     border-radius: 12px;
-    box-shadow: 0px 4px 12px rgba(0, 123, 255, 0.15);
+    /* box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.434); */
     font-family: 'Arial', sans-serif;
 }
 
@@ -41,7 +40,7 @@
     padding: 20px;
     background-color: var(--white);
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.2);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.315);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-decoration: none;
     color: var(--text-color);
@@ -49,7 +48,7 @@
 
 .therapist-item:hover {
     transform: translateY(-8px);
-    box-shadow: 0px 6px 15px rgba(0, 123, 255, 0.4);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.271);
 }
 
 /* Ảnh therapist */
