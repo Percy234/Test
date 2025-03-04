@@ -11,3 +11,21 @@
     box-shadow: 0 0 4px #0004;
     border-radius: 4px;
 }
+.buy-now-button{
+    background-color: #007bff; /* Màu xanh dương */
+    color: white; /* Chữ màu trắng */
+    border: none;
+    padding: 10px 50px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 16px;
+}
+
+.buy-now-button:hover {
+    background-color: #0056b3; /* Màu xanh dương đậm hơn khi hover */
+}
+.parent-container{
+    text-align: center;
+}
