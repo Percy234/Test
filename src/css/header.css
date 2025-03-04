@@ -172,9 +172,10 @@ nav {
   border-radius: 40%;
 }
 .link {
-  text-decoration: underline blue;
+  text-decoration: underline;
   color: blue;
   cursor: pointer;
+
 }
 .listnav li a.active {
   color: var(--color-lightskyblue);
