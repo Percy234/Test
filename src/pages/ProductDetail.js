@@ -26,6 +26,11 @@ export default function ProductDetail() {
         return <h2>Product not found</h2>;
     }
 
+     function handleBuyNowClick() {
+        alert("This page is under construction");
+
+    }
+
     return (
         <div className="product-detail">
             <img src={product.img} alt={product.name} />
@@ -36,15 +41,15 @@ export default function ProductDetail() {
                 <p>{product.price}</p>
                 <ul>
                     {Array.from({ length: product.rating }, (_, index) => (
-                        <li>
-                            <i key={index} className="bi bi-star-fill"></i>
-                        </li> 
+                        <li key={index}>
+                            <i className="bi bi-star-fill"></i>
+                        </li>
                     ))}
                 </ul>
             </div>
             <div className="button-group">
-                <Button type="primary" icon={<i className="bi bi-cart-dash"></i>} label="Add to cart"/>
-                <Button type="normal" icon={<i className="bi bi-cart-dash"></i>} label="Buy now"/>
+                <Button type="primary" icon={<i className="bi bi-cart-dash"></i>} label="Add to cart" />
+                <Button type="normal" icon={<i className="bi bi-cart-dash"></i>} label="Buy now" onClick={handleBuyNowClick} />
             </div>
         </div>
     );

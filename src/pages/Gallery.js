@@ -2,10 +2,10 @@ import React from 'react';
 import '../css/gallery.css';
 
 const images = [
-    { src: '/img/gallery/gallery1.png', alt: 'Gallery 1', name: 'Clinic Room 1' },
-    { src: '/img/gallery/gallery2.png', alt: 'Gallery 2', name: 'Clinic Room 2' },
-    { src: '/img/gallery/gallery3.png', alt: 'Gallery 3', name: 'Clinic Room 3' },
-    { src: '/img/gallery/gallery4.png', alt: 'Gallery 4', name: 'Clinic Room 4' },
+     { src: '/img/gallery/gallery4.png', alt: 'Gallery 4', name: 'Waiting Area' },
+     { src: '/img/gallery/gallery1.png', alt: 'Gallery 1', name: 'Clinic Room' },
+     { src: '/img/gallery/gallery2.png', alt: 'Gallery 2', name: 'Art Hallway' },
+     { src: '/img/gallery/gallery3.png', alt: 'Gallery 3', name: 'Rehabilitation Room' },
 ];
 
 export default function Gallery() {
