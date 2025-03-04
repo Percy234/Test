@@ -14,6 +14,7 @@ import Cart from './pages/Cart';
 import Therapists from './pages/Therapists'; 
 import TherapistsDetail from './pages/TherapistsDetail';
 import Feedback from './pages/Feedback'; 
+import Breadcrumb from './components/breadcrumb';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
   return (
     <Router>
       <Header />
+      <Breadcrumb />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />   
