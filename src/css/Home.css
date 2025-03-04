@@ -121,6 +121,7 @@ section {
    font-family: sans-serif;
    justify-content: center;
    text-align: center;
+   color: var(--color-steelblue);
 }
 .Contents p {
    font-size: 1.2em;
