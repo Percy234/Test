@@ -40,13 +40,13 @@ const Footer = () => {
               <h3 className='footer-heading'>Customer Care</h3>
               <ul className="footer-list">
                         <li className="footer-list-item">
-                            <a href="/contact" className="footer-list-item-link">FAQ</a>
+                            <a href="mailto:cusc@ctu.edu.vn?subject=Tiêu đề&body=Nội dung" className="footer-list-item-link">FAQ</a>
                         </li>
                         <li className="footer-list-item">
-                            <a href="/contact" className="footer-list-item-link">ZTC Mall</a>
+                            <a href="mailto:cusc@ctu.edu.vn?subject=Tiêu đề&body=Nội dung" className="footer-list-item-link">ZTC Mall</a>
                         </li>
                         <li className="footer-list-item">
-                            <a href="/contact" className="footer-list-item-link">Buying Guide</a>
+                            <a href="mailto:cusc@ctu.edu.vn?subject=Tiêu đề&body=Nội dung" className="footer-list-item-link">Buying Guide</a>
                         </li>
                     </ul>
             </div>
@@ -57,10 +57,10 @@ const Footer = () => {
                             <a href="/about" className="footer-list-item-link">Introduce</a>
                         </li>
                         <li className="footer-list-item">
-                            <a href="/contact" className="footer-list-item-link">Recruitment</a>
+                            <a href="mailto:cusc@ctu.edu.vn?subject=Tiêu đề&body=Nội dung" className="footer-list-item-link">Recruitment</a>
                         </li>
                         <li className="footer-list-item">
-                            <a href="/contact" className="footer-list-item-link">Clause</a>
+                            <a href="mailto:cusc@ctu.edu.vn?subject=Tiêu đề&body=Nội dung" className="footer-list-item-link">Clause</a>
                         </li>
                     </ul>
             </div>

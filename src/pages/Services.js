@@ -22,7 +22,7 @@ export default function Services() {
                                                 <Link to={`/products/12`} className='service-btn'>Related Products</Link>
                                             </button>
                                             <button>
-                                                <Link to={`/contact`} className='service-btn'>Book Now</Link>
+                                                <a href="mailto:cusc@ctu.edu.vn?subject=Booking Request - Chiropractic" className='service-btn'>Book Now</a>
                                             </button>
                                        </div>
                                     </p>
@@ -40,7 +40,7 @@ export default function Services() {
                                                 <Link to={`/products/4`} className='service-btn'>Related Products</Link>
                                             </button>
                                             <button>
-                                                <Link to={`/contact`} className='service-btn'>Book Now</Link>
+                                                <a href="mailto:cusc@ctu.edu.vn?subject=Booking Request - Chiropractic" className='service-btn'>Book Now</a>
                                             </button>
                                        </div>
                                     </p>
@@ -60,7 +60,7 @@ export default function Services() {
                                                 <Link to={`/products/9`} className='service-btn'>Related Products</Link>
                                             </button>
                                             <button>
-                                                <Link to={`/contact`} className='service-btn'>Book Now</Link>
+                                                <a href="mailto:cusc@ctu.edu.vn?subject=Booking Request - Chiropractic" className='service-btn'>Book Now</a>
                                             </button>
                                        </div>
                                     </p>
@@ -70,7 +70,7 @@ export default function Services() {
             case "Beauty aids":
                 return <div className="tab-content">
                             <div className='service-item'>
-                                <h3>Hair Care</h3>
+                                <h3 className='service-title'>Hair Care</h3>
                                 <div className='service-content'>
                                     <img className='service-img' src='/img/beauty_aids/hair.png' alt="Hair Care"/>
                                     <p className='service-description'>
@@ -83,25 +83,25 @@ export default function Services() {
                                                 <Link to={`/products/7`} className='service-btn'>Related Products</Link>
                                             </button>
                                             <button>
-                                                <Link to={`/contact`} className='service-btn'>Book Now</Link>
+                                                <a href="mailto:cusc@ctu.edu.vn?subject=Booking Request - Chiropractic" className='service-btn'>Book Now</a>
                                             </button>
                                        </div>
                                     </p>
                                 </div>
                             </div>
                             <div className='service-item'>
-                                <h3>Skin Care</h3>
+                                <h3 className='service-title'>Skin Care</h3>
                                 <div className='service-content'>
                                     <p className='service-description'>
                                         Skin care is an important process to help maintain healthy, smooth and youthful skin. An effective skincare routine usually includes basic steps such as cleansing, moisturizing and protecting the skin from environmental damage.
                                         Cleansing the skin helps remove dirt, excess oil and makeup, preventing clogged pores and acne. Moisturizing provides water and essential nutrients, helping the skin stay soft and smooth. In addition, using sunscreen daily is an important step to protect the skin from UV rays, prevent aging and dark spots.
                                         Depending on your skin type (oily, dry, sensitive or combination skin), you should choose the right product for the best results. In addition, a healthy diet, drinking enough water and getting enough sleep also help nourish the skin from the inside, making the skin more radiant and healthy.
                                         <div id='service-btns'>
-                                        <button>
+                                            <button>
                                                 <Link to={`/products/5`} className='service-btn'>Related Products</Link>
                                             </button>
                                             <button>
-                                                <Link to={`/contact`} className='service-btn'>Book Now</Link>
+                                                <a href="mailto:cusc@ctu.edu.vn?subject=Booking Request - Chiropractic" className='service-btn'>Book Now</a>
                                             </button>
                                        </div>
                                     </p>

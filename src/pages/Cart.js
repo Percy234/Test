@@ -50,7 +50,7 @@ export default function Cart() {
                     </tr>
                 </tfoot>
             </table>
-            <button className="buy-now-button">Buy Now</button>
+            <div className="parent-container"><button className="buy-now-button">Buy Now</button></div>
         </div>
     );
 }

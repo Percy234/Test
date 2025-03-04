@@ -30,6 +30,10 @@ export default function ProductDetail() {
         alert("This page is under construction");
 
     }
+    function handleAddtocartClick() {
+        alert("Thanks you");
+
+    }
 
     return (
         <div className="product-detail">
@@ -48,7 +52,7 @@ export default function ProductDetail() {
                 </ul>
             </div>
             <div className="button-group">
-                <Button type="primary" icon={<i className="bi bi-cart-dash"></i>} label="Add to cart" />
+                <Button type="primary" icon={<i className="bi bi-cart-dash"></i>} label="Add to cart" onClick={handleAddtocartClick} />
                 <Button type="normal" icon={<i className="bi bi-cart-dash"></i>} label="Buy now" onClick={handleBuyNowClick} />
             </div>
         </div>
